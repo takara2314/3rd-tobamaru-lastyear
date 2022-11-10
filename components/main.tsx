@@ -17,8 +17,9 @@ const Main = ({ children, title, description }: Props) => {
         openGraph={{ title, description }}
       />
 
-      <main className="p-10 text-lg w-screen min-h-[calc(100vh-7rem)] bg-white overflow-x-hidden overflow-y-auto">
+      <main className="p-10 text-lg w-screen h-[calc(100vh-4rem)] text-center overflow-x-hidden overflow-y-auto absolute top-[4rem] left-0">
         {children}
+        <Footer />
       </main>
     </>
   );

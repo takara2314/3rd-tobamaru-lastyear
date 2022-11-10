@@ -2,7 +2,7 @@ import Head from 'next/head';
 import type { AppProps } from 'next/app';
 import { DefaultSeo } from 'next-seo';
 import useModern from '../hooks/useModern';
-// import Menu from '../lib/menu/menu';
+import Menu from '../lib/menu';
 import Footer from '../lib/footer';
 import '../styles/globals.css';
 
@@ -39,9 +39,8 @@ const MyApp = ({ Component, pageProps, router }: AppProps) => {
         }}
       />
 
-      {/* <Menu /> */}
+      <Menu />
       <Component {...pageProps} />
-      <Footer />
     </>
   );
 };
