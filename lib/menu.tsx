@@ -19,10 +19,13 @@ const Menu = () => {
             ABOUT
           </li>
           <li>
-            PROFILE
+            MESSAGE
           </li>
           <li>
-            MESSAGE
+            PHOTO
+          </li>
+          <li>
+            PROFILE
           </li>
         </ul>
       </section>
