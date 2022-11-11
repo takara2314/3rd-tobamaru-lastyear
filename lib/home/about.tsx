@@ -23,6 +23,8 @@ const About = () => {
         </p>
       </div>
 
+      <div className="w-3/4 bg-sky-300 rounded-xl" />
+
       <div className="mt-10">
         <p>
           鳥羽丸Last Year Project検討会は、代船入替えに向けて記念行事、

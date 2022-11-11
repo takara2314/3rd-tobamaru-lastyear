@@ -17,20 +17,24 @@ body {
     -webkit-tap-highlight-color: transparent;
 }
 
-main {
+main,
+div {
     scrollbar-width: thin;
     scrollbar-color: var(--thumbBG) var(--scrollbarBG);
 }
 
-main::-webkit-scrollbar {
+main::-webkit-scrollbar,
+div::-webkit-scrollbar {
     width: 1rem;
 }
 
-main::-webkit-scrollbar-track {
+main::-webkit-scrollbar-track,
+div::-webkit-scrollbar-track {
     background: var(--scrollbarBG);
 }
 
-main::-webkit-scrollbar-thumb {
+main::-webkit-scrollbar-thumb,
+div::-webkit-scrollbar-thumb {
     background-color: var(--thumbBG);
     border-radius: 9999px;
     border: 0.225rem solid var(--scrollbarBG);
