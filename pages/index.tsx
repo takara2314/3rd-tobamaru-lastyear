@@ -15,7 +15,7 @@ const Home: NextPage = () => {
       title={title}
       description={description}
     >
-      <section className="w-screen h-[calc(100vh-12.5rem)] bg-blue-500 relative -left-[2.5rem] -top-[2.5rem]">
+      <section className="w-screen h-[calc(100vh-17.5rem)] md:h-[calc(100vh-12.5rem)] bg-blue-500 relative -left-[2.5rem] -top-[2.5rem]">
 
       </section>
 

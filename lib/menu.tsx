@@ -11,7 +11,7 @@ const Menu = () => {
           </div>
         </Link>
 
-        <ul className="px-5 w-full text-xl flex flex-row justify-around leading-[4rem]">
+        <ul className="px-5 w-full text-xl flex flex-row justify-around leading-[4rem] invisible md:visible">
           <li>
             TOP
           </li>
