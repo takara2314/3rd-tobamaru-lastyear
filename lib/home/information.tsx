@@ -7,7 +7,7 @@ const Information = () => {
       <div className="w-[90%] md:w-[80%] flex flex-col justify-center">
         <div className="px-5 md:px-10 w-full h-10 leading-10 text-left bg-white rounded-xl overflow-hidden">
           <span className="mr-5 text-gray-500">
-            2022.11.18
+            2022.11.26
           </span>
           サイトを公開しました！
         </div>

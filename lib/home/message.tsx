@@ -1,100 +1,48 @@
 import { Headline1 } from '../../components/headline';
-import MyMessage, { GroupMessage } from '../../models/messages';
+import MyMessage from '../../models/messages';
 
-const messages: GroupMessage = {
-  poster: [
-    {
-      name: '本名　次郎',
-      nameEn: 'Jiro Honmyo',
-      classLabel: '商船学科 2年',
-      role: '副リーダー',
-      message: 'ありがとう！本当にありがとう！またね！',
-    },
-    {
-      name: '本名　次郎',
-      nameEn: 'Jiro Honmyo',
-      classLabel: '商船学科 2年',
-      role: 'ポスター制作',
-      message: 'ありがとう！本当にありがとう！またね！',
-    },
-    {
-      name: '本名　次郎',
-      nameEn: 'Jiro Honmyo',
-      classLabel: '商船学科 1年',
-      role: 'ポスター制作',
-      message: 'ありがとう！本当にありがとう！またね！',
-    }
-  ],
-  homepage: [
-    {
-      name: '本名　次郎',
-      nameEn: 'Jiro Honmyo',
-      classLabel: '情報機械システム工学科 4年',
-      role: 'ホームページ制作',
-      message: 'ありがとう！本当にありがとう！またね！',
-    },
-    {
-      name: '本名　次郎',
-      nameEn: 'Jiro Honmyo',
-      classLabel: '情報機械システム工学科 4年',
-      role: 'ホームページ制作',
-      message: 'ありがとう！本当にありがとう！またね！',
-    },
-    {
-      name: '本名　次郎',
-      nameEn: 'Jiro Honmyo',
-      classLabel: '商船学科 2年',
-      role: 'ホームページ制作',
-      message: 'ありがとう！本当にありがとう！またね！',
-    }
-  ],
-  photo: [
-    {
-      name: '本名　次郎',
-      nameEn: 'Jiro Honmyo',
-      classLabel: '情報機械システム工学科 3年',
-      role: '写真コンテスト運営',
-      message: 'ありがとう！本当にありがとう！またね！',
-    },
-    {
-      name: '本名　次郎',
-      nameEn: 'Jiro Honmyo',
-      classLabel: '商船学科 2年',
-      role: '写真コンテスト運営',
-      message: 'ありがとう！本当にありがとう！またね！',
-    },
-    {
-      name: '本名　次郎',
-      nameEn: 'Jiro Honmyo',
-      classLabel: '商船学科 2年',
-      role: '写真コンテスト運営',
-      message: 'ありがとう！本当にありがとう！またね！',
-    },
-    {
-      name: '本名　次郎',
-      nameEn: 'Jiro Honmyo',
-      classLabel: '商船学科 2年',
-      role: '写真コンテスト運営',
-      message: 'ありがとう！本当にありがとう！またね！',
-    }
-  ],
-  video: [
-    {
-      name: '本名　次郎',
-      nameEn: 'Jiro Honmyo',
-      classLabel: '海事システム学専攻 2年',
-      role: '動画制作',
-      message: 'ありがとう！本当にありがとう！またね！',
-    },
-    {
-      name: '本名　次郎',
-      nameEn: 'Jiro Honmyo',
-      classLabel: '電子機械工学科 5年',
-      role: '動画制作',
-      message: 'ありがとう！本当にありがとう！またね！',
-    }
-  ]
-};
+const messages: MyMessage[] = [
+  {
+    role: '機関長',
+    message: 'こんにちは！\nここに文章が入ります！'
+  },
+  {
+    role: '鳥羽丸乗組員',
+    message: 'こんにちは！\nここに文章が入ります！'
+  },
+  {
+    role: '鳥羽丸乗組員',
+    message: 'こんにちは！\nここに文章が入ります！'
+  },
+  {
+    role: '検討会長',
+    message: 'こんにちは！\nここに文章が入ります！'
+  },
+  {
+    role: '商船学科生',
+    message: 'こんにちは！\nここに文章が入ります！'
+  },
+  {
+    role: '商船学科生',
+    message: 'こんにちは！\nここに文章が入ります！'
+  },
+  {
+    role: '海事システム学専攻生',
+    message: 'こんにちは！\nここに文章が入ります！'
+  },
+  {
+    role: 'OB',
+    message: 'こんにちは！\nここに文章が入ります！'
+  },
+  {
+    role: 'OB',
+    message: 'こんにちは！\nここに文章が入ります！'
+  },
+  {
+    role: 'OB',
+    message: 'こんにちは！\nここに文章が入ります！'
+  }
+];
 
 const Message = () => {
   return (
@@ -107,14 +55,8 @@ const Message = () => {
       <div className="w-full md:w-3/4 flex flex-col md:grid md:grid-cols-3 md:gap-8">
         <div className="w-full h-72 bg-yellow-500 rounded-xl col-span-1" />
         <div className="p-4 text-left col-span-2">
-          <div className="mb-2 text-base">
-            商船学科 2年 ／ リーダー
-          </div>
-          <h3 className="mb-5 text-2xl font-medium border-b-4 border-tobamaru-500">
-            本名　太郎
-            <small className="ml-10 text-gray-500">
-              Taro Honmyo
-            </small>
+          <h3 className="mb-2 text-xl text-tobamaru-600 font-medium">
+            船長
           </h3>
           <p>
             こんにちは！
@@ -127,20 +69,18 @@ const Message = () => {
 
       <div className="mt-20 w-full md:w-3/4 justify-between overflow-x-auto">
         <MessageArea
-          group1={messages.poster}
-          group2={messages.homepage}
+          group={messages.slice(0, (messages.length + 1) / 2)}
           top
         />
         <MessageArea
-          group1={messages.photo}
-          group2={messages.video}
+          group={messages.slice((messages.length + 1) / 2, messages.length)}
         />
       </div>
     </section>
   );
 };
 
-const MessageArea = ({ group1, group2, top }: { group1: MyMessage[], group2: MyMessage[], top?: boolean }) => {
+const MessageArea = ({ group, top }: { group: MyMessage[], top?: boolean }) => {
   return (
     <div
       className={
@@ -149,11 +89,10 @@ const MessageArea = ({ group1, group2, top }: { group1: MyMessage[], group2: MyM
           : 'flex flex-row justify-between'
       }
       style={{
-        width: `${16 * (group1.length + group2.length) + 2 * ((group1.length + group2.length) - 1)}rem`
+        width: `${16 * group.length + 2 * (group.length - 1)}rem`
       }}
     >
-      <MessageAreaItem messages={group1} />
-      <MessageAreaItem messages={group2} />
+      <MessageAreaItem messages={group} />
     </div>
   );
 };
@@ -161,22 +100,15 @@ const MessageArea = ({ group1, group2, top }: { group1: MyMessage[], group2: MyM
 const MessageAreaItem = ({ messages }: { messages: MyMessage[] }) => {
   return (
     <>
-      {messages.map((message) => (
+      {messages.map((message, index) => (
         <figure
           className="w-64 h-full rounded-xl border-2 border-gray-300 bg-gray-50 overflow-hidden"
-          key={message.name}
+          key={index}
         >
           <div className="w-64 h-48 bg-yellow-300" />
           <figcaption className="p-4 text-base text-left">
-            <div className="mb-2 h-10 text-sm flex flex-col justify-center">
-              {message.classLabel} ／ {message.role}
-            </div>
-            <h3 className="mb-5 text-xl font-medium border-b-4 border-tobamaru-500">
-              {message.name}
-              <br />
-              <small className="text-gray-500">
-                {message.nameEn}
-              </small>
+            <h3 className="mb-2 h-10 text-lg text-tobamaru-600 font-medium flex flex-col justify-center">
+              {message.role}
             </h3>
             {message.message}
           </figcaption>
