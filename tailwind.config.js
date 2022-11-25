@@ -9,7 +9,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'sans': ['Figtree', 'Noto Sans JP', 'Meiryo', 'sans-serif']
+        'sans': ['Figtree', 'Noto Sans JP', 'Meiryo', 'sans-serif'],
+        'message': ['Sawarabi Gothic', 'Noto Sans JP', 'Meiryo', 'sans-serif']
       },
       colors: {
         'tobamaru': {

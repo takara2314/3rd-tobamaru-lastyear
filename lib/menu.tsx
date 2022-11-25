@@ -6,7 +6,7 @@ const Menu = () => {
     <nav className="w-full h-16 shadow-xl flex flex-row fixed top-0 left-0 z-10">
       <section className="w-[calc(100%-4rem)] h-full flex flex-row">
         <Link href="/">
-          <div className="pl-10 w-[20rem] text-2xl text-tobamaru-500 font-bold leading-[4rem]">
+          <div className="pl-10 w-[20rem] text-2xl text-tobamaru-500 font-message font-bold leading-[4rem]">
             ありがとう 3代目鳥羽丸
           </div>
         </Link>

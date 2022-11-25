@@ -64,12 +64,14 @@ const Message = () => {
           <h3 className="mb-2 text-xl text-tobamaru-600 font-medium">
             船長
           </h3>
-          <p>
-            こんにちは！
-          </p>
-          <p>
-            ここに文章が入ります！
-          </p>
+          <div className="font-message">
+            <p>
+              こんにちは！
+            </p>
+            <p>
+              ここに文章が入ります！
+            </p>
+          </div>
         </div>
       </AnimationTrigger>
 
@@ -116,7 +118,9 @@ const MessageAreaItem = ({ messages }: { messages: MyMessage[] }) => {
             <h3 className="mb-2 h-10 text-lg text-tobamaru-600 font-medium flex flex-col justify-center">
               {message.role}
             </h3>
-            {message.message}
+            <div className="font-message">
+              {message.message}
+            </div>
           </figcaption>
         </figure>
       ))}
