@@ -1,3 +1,4 @@
+import AnimationTrigger from '../../components/animationTrigger';
 import { Headline1 } from '../../components/headline';
 
 const About = () => {
@@ -8,7 +9,11 @@ const About = () => {
         id="about"
       />
 
-      <div>
+      <AnimationTrigger
+        animation="fadeIn"
+        rootMargin="100px"
+        triggerOnce
+      >
         <p>
           鳥羽丸（とばまる）は、鳥羽商船高等専門学校が保有する練習船です。
         </p>
@@ -21,11 +26,15 @@ const About = () => {
         <p>
           3代目鳥羽丸は2025年3月に引退予定です。
         </p>
-      </div>
+      </AnimationTrigger>
 
-      <div className="w-3/4 bg-sky-300 rounded-xl" />
+      <div className="my-10 w-3/4 h-[30rem] bg-sky-300 rounded-xl" />
 
-      <div className="mt-10">
+      <AnimationTrigger
+        animation="fadeIn"
+        rootMargin="100px"
+        triggerOnce
+      >
         <p>
           鳥羽丸Last Year Project検討会は、代船入替えに向けて記念行事、
         </p>
@@ -35,7 +44,7 @@ const About = () => {
         <p>
           より深めるための企画を検討する学校公認の学生団体です。
         </p>
-      </div>
+      </AnimationTrigger>
     </section>
   );
 };

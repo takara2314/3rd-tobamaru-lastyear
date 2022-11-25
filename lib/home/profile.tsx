@@ -1,3 +1,4 @@
+import AnimationTrigger from '../../components/animationTrigger';
 import { Headline1 } from '../../components/headline';
 
 const profile = [
@@ -55,20 +56,26 @@ const Profile = () => {
         id="profile"
       />
 
-      <table>
-        <tbody>
-          {profile.map((item) => (
-            <tr key={item.label}>
-              <th className="py-1 w-40 text-left font-medium">
-                {item.label}
-              </th>
-              <td className="text-left">
-                {item.value}
-              </td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
+      <AnimationTrigger
+        animation="fadeIn"
+        rootMargin="100px"
+        triggerOnce
+      >
+        <table>
+          <tbody>
+            {profile.map((item) => (
+              <tr key={item.label}>
+                <th className="py-1 w-40 text-left font-medium">
+                  {item.label}
+                </th>
+                <td className="text-left">
+                  {item.value}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </AnimationTrigger>
     </section>
   );
 };

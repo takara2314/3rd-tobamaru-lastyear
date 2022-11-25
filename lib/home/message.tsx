@@ -1,3 +1,4 @@
+import AnimationTrigger from '../../components/animationTrigger';
 import { Headline1 } from '../../components/headline';
 import MyMessage from '../../models/messages';
 
@@ -52,7 +53,12 @@ const Message = () => {
         id="message"
       />
 
-      <div className="w-full md:w-3/4 flex flex-col md:grid md:grid-cols-3 md:gap-8">
+      <AnimationTrigger
+        animation="fadeIn flex flex-col md:grid md:grid-cols-3 md:gap-8"
+        rootMargin="100px"
+        className="w-full md:w-3/4"
+        triggerOnce
+      >
         <div className="w-full h-72 bg-yellow-500 rounded-xl col-span-1" />
         <div className="p-4 text-left col-span-2">
           <h3 className="mb-2 text-xl text-tobamaru-600 font-medium">
@@ -65,7 +71,7 @@ const Message = () => {
             ここに文章が入ります！
           </p>
         </div>
-      </div>
+      </AnimationTrigger>
 
       <div className="mt-20 w-full md:w-3/4 justify-between overflow-x-auto">
         <MessageArea
