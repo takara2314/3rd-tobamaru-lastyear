@@ -28,7 +28,7 @@ const About = () => {
         </p>
       </AnimationTrigger>
 
-      <div className="my-10 w-3/4 h-[30rem] bg-sky-300 rounded-xl" />
+      <div className="my-10 w-full md:w-3/4 h-[30rem] bg-sky-300 rounded-xl" />
 
       <AnimationTrigger
         animation="fadeIn"
