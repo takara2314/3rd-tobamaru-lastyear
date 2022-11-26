@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import AnimationTrigger from '../../components/animationTrigger';
 import { Headline1 } from '../../components/headline';
 
@@ -28,7 +29,15 @@ const About = () => {
         </p>
       </AnimationTrigger>
 
-      <div className="my-10 w-full md:w-3/4 h-[30rem] bg-sky-300 rounded-xl" />
+      <div className="my-10 w-full md:w-3/4 h-[30rem] bg-sky-300 rounded-xl overflow-hidden">
+        <Image
+          src="/tobamaru2.jpg"
+          alt="鳥羽丸"
+          width={492}
+          height={350}
+          className="w-full object-cover"
+        />
+      </div>
 
       <AnimationTrigger
         animation="fadeIn"
