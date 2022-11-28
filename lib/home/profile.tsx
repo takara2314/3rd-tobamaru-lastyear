@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import AnimationTrigger from '../../components/animationTrigger';
 import { Headline1 } from '../../components/headline';
 
@@ -75,6 +76,15 @@ const Profile = () => {
             ))}
           </tbody>
         </table>
+
+        <div className="mt-10">
+          <Link
+            href="https://www.maritime.toba-cmt.ac.jp/tobamaru/"
+            className="text-blue-700 font-medium"
+          >
+            詳しくは商船学科のページをご覧ください。
+          </Link>
+        </div>
       </AnimationTrigger>
     </section>
   );
