@@ -13,7 +13,7 @@ const Main = ({ children, title, description }: Props) => {
     <>
       <NextSeo
         title={title}
-        description={description}
+        description="1994年に鳥羽商船高等専門学校の練習船として竣工された3代目鳥羽丸は、2025年3月に引退予定です。これまで多くの学生の航海実習に使われた鳥羽丸にありがとうを。"
         openGraph={{ title, description }}
       />
 

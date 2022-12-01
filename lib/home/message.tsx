@@ -54,12 +54,15 @@ const Message = () => {
       />
 
       <AnimationTrigger
-        animation="fadeIn flex flex-col md:grid md:grid-cols-3 md:gap-8"
+        // animation="fadeIn flex flex-col md:grid md:grid-cols-3 md:gap-8"
+        animation="h-64 fadeIn flex flex-col text-center text-2xl"
         rootMargin="100px"
         className="w-full md:w-3/4"
         triggerOnce
       >
-        <div className="w-full h-72 bg-yellow-500 rounded-xl col-span-1" />
+        Coming soon...
+
+        {/* <div className="w-full h-72 bg-yellow-500 rounded-xl col-span-1" />
         <div className="p-4 text-left col-span-2">
           <h3 className="mb-2 text-xl text-tobamaru-600 font-medium">
             船長
@@ -72,10 +75,10 @@ const Message = () => {
               ここに文章が入ります！
             </p>
           </div>
-        </div>
+        </div> */}
       </AnimationTrigger>
 
-      <div className="mt-20 w-full md:w-3/4 justify-between overflow-x-auto">
+      {/* <div className="mt-20 w-full md:w-3/4 justify-between overflow-x-auto">
         <MessageArea
           group={messages.slice(0, (messages.length + 1) / 2)}
           top
@@ -83,7 +86,7 @@ const Message = () => {
         <MessageArea
           group={messages.slice((messages.length + 1) / 2, messages.length)}
         />
-      </div>
+      </div> */}
     </section>
   );
 };
