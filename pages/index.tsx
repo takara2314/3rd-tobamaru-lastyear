@@ -1,4 +1,7 @@
 import type { NextPage } from 'next';
+import { useRef, useEffect, useState } from 'react';
+import YouTube from 'react-youtube';
+import type { YouTubeProps } from 'react-youtube';
 import Main from '../components/main';
 import About from '../lib/home/about';
 import Information from '../lib/home/information';
@@ -10,12 +13,45 @@ const title = 'ホーム';
 const description = 'ホームです';
 
 const Home: NextPage = () => {
+  const containerObj = useRef<HTMLElement>(null);
+
+  const [width, setWidth] = useState<number>(0);
+  const [height, setHeight] = useState<number>(0);
+
+  useEffect(() => {
+    if (!containerObj.current) {
+      return;
+    }
+    setWidth(containerObj.current.clientWidth);
+    setHeight(containerObj.current.clientHeight);
+  }, [containerObj]);
+
+  const onPlayerReady: YouTubeProps['onReady'] = (event) => {
+    event.target.playVideo();
+    event.target.mute();
+  };
+
   return (
     <Main
       title={title}
       description={description}
     >
-      <section className="w-screen h-[calc(100vh-17.5rem)] md:h-[calc(100vh-12.5rem)] bg-blue-500 relative -left-[2.5rem] -top-[2.5rem]">
+      <section
+        className="w-screen h-[calc(100vh-17.5rem)] md:h-[calc(100vh-12.5rem)] bg-blue-500 relative -left-[2.5rem] -top-[2.5rem]"
+        ref={containerObj}
+      >
+        <YouTube
+          videoId="0arHEswe0gA"
+          opts={{
+            width: width,
+            height: height,
+            playerVars: {
+              autoplay: 1
+            }
+          }}
+          onReady={onPlayerReady}
+        />
+
         <div className="wrapper absolute bottom-0 right-0 md:right-10">
           <div className="wrapper-inner">
             <div className="scroll-down">

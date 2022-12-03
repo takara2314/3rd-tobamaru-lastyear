@@ -45,7 +45,6 @@ const Photo = () => {
           <iframe
             src="https://snapwidget.com/embed/1017460"
             className="snapwidget-widget w-full"
-            allowTransparency={true}
             frameBorder="0"
             scrolling="no"
           />
