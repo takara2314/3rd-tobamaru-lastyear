@@ -37,20 +37,22 @@ const Home: NextPage = () => {
       description={description}
     >
       <section
-        className="w-screen h-[calc(100vh-17.5rem)] md:h-[calc(100vh-12.5rem)] bg-blue-500 relative -left-[2.5rem] -top-[2.5rem]"
+        className="w-screen h-[calc(100vh-17.5rem)] md:h-[calc(100vh-12.5rem)] bg-black relative -left-[2.5rem] -top-[2.5rem]"
         ref={containerObj}
       >
-        <YouTube
-          videoId="0arHEswe0gA"
-          opts={{
-            width: width,
-            height: height,
-            playerVars: {
-              autoplay: 1
-            }
-          }}
-          onReady={onPlayerReady}
-        />
+        {width !== 0 && height !== 0 && (
+          <YouTube
+            videoId="0arHEswe0gA"
+            opts={{
+              width: width,
+              height: height,
+              playerVars: {
+                autoplay: 1
+              }
+            }}
+            onReady={onPlayerReady}
+          />
+        )}
 
         <div className="wrapper absolute bottom-0 right-0 md:right-10">
           <div className="wrapper-inner">
