@@ -22,13 +22,30 @@ const Home: NextPage = () => {
     if (!containerObj.current) {
       return;
     }
-    setWidth(containerObj.current.clientWidth);
-    setHeight(containerObj.current.clientHeight);
+
+    const id = setInterval(resize, 500);
+
+    return () => {
+      clearInterval(id);
+    };
   }, [containerObj]);
 
-  const onPlayerReady: YouTubeProps['onReady'] = (event) => {
+  const resize = () => {
+    setWidth(containerObj.current!.clientWidth);
+    setHeight(containerObj.current!.clientHeight);
+  };
+
+  const handlePlayerReady: YouTubeProps['onReady'] = (event) => {
     event.target.playVideo();
     event.target.mute();
+  };
+
+  const handleStateChange: YouTubeProps['onStateChange'] = (event) => {
+    switch (event.data) {
+      case 0:
+        event.target.playVideo();
+        break;
+    }
   };
 
   return (
@@ -50,7 +67,8 @@ const Home: NextPage = () => {
                 autoplay: 1
               }
             }}
-            onReady={onPlayerReady}
+            onReady={handlePlayerReady}
+            onStateChange={handleStateChange}
           />
         )}
 
