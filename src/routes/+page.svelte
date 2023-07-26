@@ -138,6 +138,7 @@
   }
 
   section {
+    width: 100%;
     margin-top: 15rem;
     margin-bottom: 15rem;
   }
@@ -188,7 +189,7 @@
     border-radius: 1rem 0 0 1rem;
   }
 
-  .right-image figcaption {
+  /* .right-image figcaption {
     position: absolute;
     bottom: 0;
     left: 3rem;
@@ -196,7 +197,7 @@
     color: white;
     padding: 0.5rem 3rem;
     border-radius: 0 1rem 0 1rem;
-  }
+  } */
 
   .column-2 article {
     padding: 2rem 4rem;
