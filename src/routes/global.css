@@ -1,1 +1,21 @@
-/* styles */
+@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@500&family=Mochiy+Pop+One&display=swap');
+
+:root {
+  --primary-color: rgb(0, 43, 86);
+  --text-color: rgb(53, 53, 53);
+  --page-color: rgb(255, 255, 255);
+  --section-bg-color: rgb(224, 233, 255);
+  --primary-btn-bg-color: rgb(222, 245, 255);
+  --primary-btn-shadow-color: rgba(22, 136, 185, 0.25);
+  --secondary-btn-bg-color: rgb(245, 245, 245);
+  --secondary-btn-shadow-color: rgba(180, 180, 180, 0.25);
+  --gray-wave-color: rgb(226, 226, 226);
+}
+
+body {
+  font-family: 'Kiwi Maru', serif;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  color: var(--text-color);
+  background-color: var(--page-color);
+}
