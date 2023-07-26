@@ -13,7 +13,7 @@
 }
 
 body {
-  font-family: 'Kiwi Maru', serif;
+  font-family: 'Kiwi Maru', Arial, sans-serif;
   font-size: 1.125rem;
   line-height: 1.75rem;
   color: var(--text-color);
