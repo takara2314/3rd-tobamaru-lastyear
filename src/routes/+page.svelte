@@ -2,7 +2,14 @@
   import { PUBLIC_SITE_URL } from "$env/static/public";
 </script>
 
-<h1>鳥羽丸プロジェクトチームのページにようこそ！</h1>
-<p>
-  <a href={PUBLIC_SITE_URL}> 3rd-tobamaru-lastyear.vercel.app </a>
-</p>
+<header>aiueo</header>
+
+<main>aiueo</main>
+
+<style>
+  header {
+    width: 100%;
+    height: 100dvh;
+    background-color: rgb(134, 134, 225);
+  }
+</style>

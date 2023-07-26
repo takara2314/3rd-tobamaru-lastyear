@@ -16,6 +16,7 @@ body {
   font-family: 'Kiwi Maru', Arial, sans-serif;
   font-size: 1.125rem;
   line-height: 1.75rem;
+  text-align: center;
   color: var(--text-color);
   background-color: var(--page-color);
 }
