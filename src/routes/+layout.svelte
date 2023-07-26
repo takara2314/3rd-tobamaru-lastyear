@@ -14,7 +14,7 @@
       <a href="/history">
         <div>
           <img
-            src="./icons/ship.svg"
+            src="/icons/ship.svg"
             alt="鳥羽丸の歴史"
           />
         </div>
@@ -25,7 +25,7 @@
       <a href="/explore">
         <div>
           <img
-            src="./icons/compass.svg"
+            src="/icons/compass.svg"
             alt="鳥羽丸の歴史"
           />
         </div>
@@ -36,7 +36,7 @@
       <a href="/point">
         <div>
           <img
-            src="./icons/ribbon.svg"
+            src="/icons/ribbon.svg"
             alt="鳥羽丸の歴史"
           />
         </div>
@@ -47,8 +47,8 @@
       <a href="/contact">
         <div>
           <img
-            src="./icons/ship.svg"
-            alt="鳥羽丸の歴史"
+            src="/icons/letter.svg"
+            alt="お問い合わせ"
           />
         </div>
         お問い合わせ
@@ -63,19 +63,20 @@
 
 <style>
   menu {
-    width: calc(100% - 4rem);
-    height: 6.5rem;
+    width: calc(100% - 3rem);
+    height: 5rem;
     background-color: white;
-    box-shadow: 0 0 10 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
     border-radius: 1rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
     display: flex;
     flex-direction: row;
     position: fixed;
-    top: 2rem;
-    left: 2rem;
-    right: 2rem;
+    top: 1.5rem;
+    left: 1.5rem;
+    right: 1.5rem;
+    z-index: 10;
   }
 
   menu h1 {
@@ -90,8 +91,8 @@
   }
 
   menu ul li {
-    font-size: 1rem;
-    margin-left: 10rem;
+    font-size: 0.8rem;
+    margin-left: 5rem;
   }
 
   menu ul li a {
@@ -103,8 +104,8 @@
   }
 
   menu ul li a div {
-    width: 3rem;
-    height: 3rem;
+    width: 2.5rem;
+    height: 2.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -112,7 +113,7 @@
 
   menu ul li a div img {
     width: 100%;
-    margin-bottom: 0.1rem;
+    margin-bottom: -0.5rem;
   }
 
   footer {
