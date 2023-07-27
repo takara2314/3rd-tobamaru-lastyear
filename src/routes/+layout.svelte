@@ -6,7 +6,11 @@
 <menu>
   <h1>
     <a href="/">
-      logo
+      <img
+        src="/logo.webp"
+        alt="ロゴ"
+        class="logo"
+      />
     </a>
   </h1>
   <ul>
@@ -136,6 +140,10 @@
   menu ul li a div img {
     width: 100%;
     margin-bottom: -0.5rem;
+  }
+
+  .logo {
+    height: 100%;
   }
 
   footer {

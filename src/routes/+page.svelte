@@ -52,7 +52,12 @@
   <script src="https://snapwidget.com/js/snapwidget.js" />
 </svelte:head>
 
-<header>header</header>
+<header>
+  <img
+    src="/photos/header.webp"
+    alt="ヘッダー"
+  />
+</header>
 
 <main>
   <section id="whats-tobamaru" class="column-2">
@@ -244,6 +249,12 @@
     width: 100%;
     height: 100dvh;
     background-color: rgb(134, 134, 225);
+  }
+
+  header img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
   section {
