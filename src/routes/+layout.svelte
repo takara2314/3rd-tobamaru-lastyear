@@ -59,7 +59,29 @@
 
 <slot />
 
-<footer>footer</footer>
+<footer>
+  <ul>
+    <li>
+      <a href="https://www.toba-cmt.ac.jp/">
+        鳥羽商船高等専門学校 ウェブサイト
+      </a>
+    </li>
+    <li>
+      <a href="/#">
+        プライバシーポリシー
+      </a>
+    </li>
+    <li>
+      <a href="https://github.com/takara2314/3rd-tobamaru-lastyear/tree/v2-develop">
+        このサイトのソースコード
+      </a>
+    </li>
+  </ul>
+
+  <small>
+    © 2023 鳥羽丸プロジェクトチーム
+  </small>
+</footer>
 
 <style>
   menu {
@@ -118,8 +140,13 @@
 
   footer {
     width: 100%;
-    height: 10rem;
     background-color: var(--primary-color);
     color: rgb(255, 255, 255);
+    text-align: left;
+    padding: 3rem;
+  }
+
+  footer ul {
+    margin-bottom: 2rem;
   }
 </style>
