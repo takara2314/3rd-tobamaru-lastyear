@@ -7,7 +7,7 @@
   <h1>
     <a href="/">
       <img
-        src="/logo.webp"
+        src="/logo-new.webp"
         alt="ロゴ"
         class="logo"
       />
@@ -106,7 +106,7 @@
   }
 
   menu h1 {
-    width: 15rem;
+    width: 30rem;
   }
 
   menu ul {
