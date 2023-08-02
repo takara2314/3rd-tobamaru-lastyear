@@ -7,7 +7,7 @@
   <h1>
     <a href="/">
       <img
-        src="/logo-new.webp"
+        src="/logo.svg"
         alt="ロゴ"
         class="logo"
       />

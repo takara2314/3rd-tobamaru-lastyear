@@ -112,8 +112,8 @@
                 alt={article.name}
               />
               <div>
-                <div class="date">
-                  <span>
+                <div>
+                  <span class="published-at">
                     {article.date}
                   </span>
                 </div>
@@ -414,7 +414,7 @@
     padding: 0.25rem 1rem;
   }
 
-  .news .date span {
+  .news .published-at {
     color: var(--primary-color);
     font-size: 1rem;
     padding: 0.1rem 2rem;
