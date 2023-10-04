@@ -1,2 +1,2 @@
-# 3rd Tobamaru LastYear
-鳥羽丸Last Year Project検討会のウェブサイトです。
+# Tobamaru Project Team
+Tobamaru Project Team検討会のウェブサイトです。
