@@ -45,7 +45,7 @@ const About = () => {
         triggerOnce
       >
         <p>
-          Tobamaru Project Team検討会は、代船入替えに向けて記念行事、
+          Tobamaru Project Teamは、代船入替えに向けて記念行事、
         </p>
         <p>
           在校生や卒業生の鳥羽商船に対する愛着や地域の人々の親しみを

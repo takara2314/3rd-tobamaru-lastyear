@@ -18,18 +18,18 @@ const MyApp = ({ Component, pageProps, router }: AppProps) => {
       </Head>
 
       <DefaultSeo
-        titleTemplate="%s - Tobamaru Project Team検討会"
+        titleTemplate="%s - Tobamaru Project Team"
         openGraph={{
           type: 'website',
           locale: 'ja_JP',
           url: `${process.env.NEXT_PUBLIC_SITE_URL}${router.route}`,
-          description: 'Tobamaru Project Team検討会のウェブサイトです。',
-          site_name: 'Tobamaru Project Team検討会 ウェブサイト',
+          description: 'Tobamaru Project Teamのウェブサイトです。',
+          site_name: 'Tobamaru Project Team ウェブサイト',
           images: [{
             url: `${process.env.NEXT_PUBLIC_SITE_URL}/ogp.webp`,
             width: 512,
             height: 512,
-            alt: 'Tobamaru Project Team検討会のロゴ',
+            alt: 'Tobamaru Project Teamのロゴ',
             type: 'image/webp'
           }]
         }}

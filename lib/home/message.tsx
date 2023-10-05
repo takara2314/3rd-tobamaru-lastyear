@@ -16,7 +16,7 @@ const messages: MyMessage[] = [
     message: 'こんにちは！\nここに文章が入ります！'
   },
   {
-    role: '検討会長',
+    role: '会長',
     message: 'こんにちは！\nここに文章が入ります！'
   },
   {
