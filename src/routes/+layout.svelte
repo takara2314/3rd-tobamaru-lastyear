@@ -83,7 +83,7 @@
   </ul>
 
   <small>
-    © 2023 鳥羽丸プロジェクトチーム
+    © 2023 Tobamaru Project Team
   </small>
 </footer>
 

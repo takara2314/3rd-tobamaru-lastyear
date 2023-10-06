@@ -1,6 +1,6 @@
 # 3rd Tobamaru LastYear
 
-鳥羽商船高専 鳥羽丸プロジェクトチームのウェブサイトです。
+鳥羽商船高等専門学校 Tobamaru Project Teamのウェブサイトです。
 
 ## URL
 

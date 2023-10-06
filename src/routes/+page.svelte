@@ -99,7 +99,7 @@
   <section id="news">
     <h2>ニュース</h2>
     <div>
-      鳥羽丸と鳥羽丸プロジェクトチームについての最新情報を掲載します
+      鳥羽丸とTobamaru Project Teamについての最新情報を掲載します
     </div>
 
     <div class="news">
@@ -204,12 +204,12 @@
 
     <article>
       <h2>
-        鳥羽丸プロジェクトチームとは？
+        Tobamaru Project Teamとは？
       </h2>
 
       <div>
         <p>
-          鳥羽丸プロジェクトチームは、
+          Tobamaru Project Teamは、
         </p>
         <p>
           代船入替えに向けて記念行事、
