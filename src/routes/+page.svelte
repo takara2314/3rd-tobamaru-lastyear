@@ -1,6 +1,6 @@
 <script>
-  import PrimaryBtn from "./buttons/PrimaryBtn.svelte";
-  import SecondaryBtn from "./buttons/SecondaryBtn.svelte";
+  import PrimaryBtn from "../components/buttons/PrimaryBtn.svelte";
+  import SecondaryBtn from "../components/buttons/SecondaryBtn.svelte";
 
   const news = [
     {
