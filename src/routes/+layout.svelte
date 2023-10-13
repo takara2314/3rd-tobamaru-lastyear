@@ -217,8 +217,13 @@
     border-radius: 0.25rem;
   }
 
-  h1.title img {
+  h1.title a {
+    width: 100%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .logo {
@@ -323,16 +328,20 @@
       width: 30rem;
     }
 
+    .logo {
+      height: 80%;
+    }
+
     ul.pc {
       width: calc(100% - 15rem);
       display: flex;
       flex-direction: row;
       justify-content: end;
+      gap: 5rem;
     }
 
     ul.pc li {
       font-size: 0.8rem;
-      margin-left: 5rem;
     }
 
     ul.pc li a {
