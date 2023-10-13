@@ -221,6 +221,10 @@
     height: 100%;
   }
 
+  .logo {
+    height: 100%;
+  }
+
   ul.pc {
     display: none;
   }
@@ -280,6 +284,19 @@
     width: 2rem;
   }
 
+  footer {
+    width: 100%;
+    height: 15rem;
+    background-color: var(--primary-color);
+    color: rgb(255, 255, 255);
+    text-align: left;
+    padding: 3rem;
+  }
+
+  footer ul {
+    margin-bottom: 2rem;
+  }
+
   @media (min-width: 1024px) {
     menu {
       width: calc(100% - 3rem);
@@ -337,22 +354,6 @@
     ul.pc li a div img {
       width: 100%;
       margin-bottom: -0.5rem;
-    }
-
-    .logo {
-      height: 100%;
-    }
-
-    footer {
-      width: 100%;
-      background-color: var(--primary-color);
-      color: rgb(255, 255, 255);
-      text-align: left;
-      padding: 3rem;
-    }
-
-    footer ul {
-      margin-bottom: 2rem;
     }
   }
 </style>
