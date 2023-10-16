@@ -1,6 +1,7 @@
 <script>
   import PrimaryBtn from "../components/buttons/PrimaryBtn.svelte";
   import SecondaryBtn from "../components/buttons/SecondaryBtn.svelte";
+    import H2 from "../components/headers/H2.svelte";
   import CommonWave from "../components/waves/CommonWave.svelte";
 
   const news = [
@@ -76,9 +77,9 @@
     </figure>
 
     <article>
-      <h2>
+      <H2>
         鳥羽丸とは？
-      </h2>
+      </H2>
       <div>
         <p>
           鳥羽丸（とばまる）とは、
@@ -102,7 +103,7 @@
 
   <section id="news">
     <article>
-      <h2>ニュース</h2>
+      <H2>ニュース</H2>
       <div>
         鳥羽丸とTobamaru Project Teamについての最新情報を掲載します
       </div>
@@ -136,9 +137,9 @@
   <div class="blue-bg-area">
     <section id="events" class="column-2">
       <article>
-        <h2 white-wave>
+        <H2 whiteWave>
           イベント
-        </h2>
+        </H2>
         <div>
           不定期に鳥羽丸に関するイベントを開催しています
         </div>
@@ -186,9 +187,9 @@
 
     <section id="instagram">
       <article>
-        <h2 white-wave>
+        <H2 whiteWave>
           Instagram
-        </h2>
+        </H2>
         <div>
           定期的に鳥羽丸や鳥羽商船にまつわる情報を投稿します
         </div>
@@ -210,9 +211,9 @@
     </figure>
 
     <article>
-      <h2>
+      <H2>
         Tobamaru Project Teamとは？
-      </h2>
+      </H2>
 
       <div>
         <p>
