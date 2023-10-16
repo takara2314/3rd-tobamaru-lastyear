@@ -1,7 +1,8 @@
 <script>
+  import MetaTags from "../components/MetaTags.svelte";
   import PrimaryBtn from "../components/buttons/PrimaryBtn.svelte";
   import SecondaryBtn from "../components/buttons/SecondaryBtn.svelte";
-    import H2 from "../components/headers/H2.svelte";
+  import H2 from "../components/headers/H2.svelte";
   import CommonWave from "../components/waves/CommonWave.svelte";
 
   const news = [
@@ -53,6 +54,12 @@
 <svelte:head>
   <script src="https://snapwidget.com/js/snapwidget.js" />
 </svelte:head>
+
+<MetaTags
+  title="Tobamaru Project Team"
+  description="Tobamaru Project Teamは、代船入替えに向けて記念行事、在校生や卒業生の鳥羽商船に対する愛着や地域の人々の親しみをより深めるための企画を検討する学生団体です。"
+  href="/"
+/>
 
 <header>
   <img

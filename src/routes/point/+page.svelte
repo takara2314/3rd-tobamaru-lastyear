@@ -1,7 +1,14 @@
 <script>
+  import MetaTags from "../../components/MetaTags.svelte";
   import PrimaryBtn from "../../components/buttons/PrimaryBtn.svelte";
   import SecondaryBtn from "../../components/buttons/SecondaryBtn.svelte";
 </script>
+
+<MetaTags
+  title="ここがスゴイ！"
+  description="鳥羽丸のすごいところを一気に紹介！"
+  href="/point"
+/>
 
 <main>
   <h2>
