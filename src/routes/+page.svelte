@@ -97,11 +97,12 @@
   </section>
 
   <section id="news">
-    <h2>ニュース</h2>
-    <div>
-      鳥羽丸とTobamaru Project Teamについての最新情報を掲載します
-    </div>
-
+    <article>
+      <h2>ニュース</h2>
+      <div>
+        鳥羽丸とTobamaru Project Teamについての最新情報を掲載します
+      </div>
+    </article>
     <div class="news">
       <ul>
         {#each news as article}
@@ -180,12 +181,14 @@
     </section>
 
     <section id="instagram">
-      <h2 white-wave>
-        Instagram
-      </h2>
-      <div>
-        定期的に鳥羽丸や鳥羽商船にまつわる情報を投稿します
-      </div>
+      <article>
+        <h2 white-wave>
+          Instagram
+        </h2>
+        <div>
+          定期的に鳥羽丸や鳥羽商船にまつわる情報を投稿します
+        </div>
+      </article>
       <iframe
         title="Instagram Feed"
         src="https://snapwidget.com/embed/1017460"
@@ -264,6 +267,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  article > div {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   figure {
@@ -512,6 +520,11 @@
 
     figure {
       margin-bottom: auto;
+    }
+
+    article > div {
+      padding-left: auto;
+      padding-right: auto;
     }
 
     .column-2 {
