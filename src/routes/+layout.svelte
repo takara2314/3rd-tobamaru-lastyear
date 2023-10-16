@@ -385,14 +385,12 @@
       width: 100%;
       margin-bottom: -0.5rem;
     }
-/* 
-    footer {
-      width: 100%;
-      height: 15rem;
+
+    footer ul {
       background-color: var(--primary-color);
       color: rgb(255, 255, 255);
       text-align: left;
       padding: 3rem;
-    } */
+    }
   }
 </style>
