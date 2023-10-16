@@ -266,19 +266,22 @@
     align-items: center;
   }
 
+  figure {
+    margin-bottom: 2rem;
+  }
+
   .column-2 {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
   }
 
   .column-2 > * {
-    width: 50%;
+    width: 100%;
   }
 
   .left-image {
     height: 70dvh;
-    padding-right: 3rem;
     position: relative;
   }
 
@@ -292,7 +295,7 @@
   .left-image figcaption {
     position: absolute;
     bottom: 0;
-    right: 3rem;
+    right: 0rem;
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     padding: 0.5rem 3rem;
@@ -301,7 +304,6 @@
 
   .right-image {
     height: 70dvh;
-    padding-left: 3rem;
     position: relative;
   }
 
@@ -315,7 +317,7 @@
   /* .right-image figcaption {
     position: absolute;
     bottom: 0;
-    left: 3rem;
+    left: 0rem;
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     padding: 0.5rem 3rem;
@@ -323,7 +325,8 @@
   } */
 
   .column-2 article {
-    padding: 2rem 4rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 
   .column-2 article div:not(.button-column) > p {
@@ -430,6 +433,7 @@
 
   .events {
     width: 100%;
+    padding: 1rem;
     display: flex;
     flex-direction: column;
   }
@@ -487,12 +491,89 @@
   }
 
   .instagram-feed {
-    width: 80vw;
-    height: 80vw;
+    width: 100vw;
+    height: 100vw;
     background-color: var(--bg-color);
     margin-top: 2rem;
     padding: 1rem;
     border: none;
     border-radius: 1rem;
+  }
+
+  @media (min-width: 1024px) {
+    section {
+      width: 100%;
+      margin-top: 15rem;
+      margin-bottom: 15rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    figure {
+      margin-bottom: auto;
+    }
+
+    .column-2 {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .column-2 > * {
+      width: 50%;
+    }
+
+    .column-2 article {
+      padding: 2rem 4rem;
+    }
+
+    .left-image {
+      height: 70dvh;
+      padding-right: 3rem;
+      position: relative;
+    }
+
+    .left-image figcaption {
+      position: absolute;
+      bottom: 0;
+      right: 3rem;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      padding: 0.5rem 3rem;
+      border-radius: 1rem 0 1rem 0;
+    }
+
+    .right-image {
+      height: 70dvh;
+      padding-left: 3rem;
+      position: relative;
+    }
+
+    /* .right-image figcaption {
+      position: absolute;
+      bottom: 0;
+      left: 3rem;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      padding: 0.5rem 3rem;
+      border-radius: 0 1rem 0 1rem;
+    } */
+
+    .events {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .instagram-feed {
+      width: 80vw;
+      height: 80vw;
+      background-color: var(--bg-color);
+      margin-top: 2rem;
+      padding: 1rem;
+      border: none;
+      border-radius: 1rem;
+    }
   }
 </style>

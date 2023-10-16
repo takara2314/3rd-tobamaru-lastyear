@@ -10,9 +10,19 @@
 <style>
   a {
     color: var(--text-color);
-    padding: 0.5rem 4rem;
+    padding: 0.5rem 2.5rem;
     border-radius: 1rem;
     background-color: var(--secondary-btn-bg-color);
     box-shadow: 0 0.25rem 0.1rem var(--secondary-btn-shadow-color);
+  }
+
+  @media (min-width: 1024px) {
+    a {
+      color: var(--text-color);
+      padding: 0.5rem 4rem;
+      border-radius: 1rem;
+      background-color: var(--secondary-btn-bg-color);
+      box-shadow: 0 0.25rem 0.1rem var(--secondary-btn-shadow-color);
+    }
   }
 </style>
