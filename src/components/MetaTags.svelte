@@ -8,13 +8,13 @@
 
   $: metaTags = {
     title: "Tobamaru Project Team",
-    titleTemplate: `${title} | Tobamaru Project Team`,
+    titleTemplate: href !== "/" ? `${title} | Tobamaru Project Team` : "Tobamaru Project Team",
     description: description,
     canonical: `${PUBLIC_SITE_URL}${href}`,
     robots: "noindex",
     openGraph: {
       url: `${PUBLIC_SITE_URL}${href}`,
-      title: `${title} | Tobamaru Project Team`,
+      title: href !== "/" ? `${title} | Tobamaru Project Team` : "Tobamaru Project Team",
       description: description,
       images: [
         {
@@ -30,16 +30,12 @@
       handle: "@3rdTOBAMARUprg",
       site: "@3rdTOBAMARUprg",
       cardType: "summary_large_image",
-      title: `${title} | Tobamaru Project Team`,
+      title: href !== "/" ? `${title} | Tobamaru Project Team` : "Tobamaru Project Team",
       description: description,
       image: `${PUBLIC_SITE_URL}/x-header.webp`,
       imageAlt: "Xヘッダー"
     }
   };
-
-  $: if (href === "/") {
-    metaTags.titleTemplate = metaTags.title;
-  }
 </script>
 
 <MetaTags {...metaTags} />
