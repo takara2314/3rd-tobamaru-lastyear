@@ -263,7 +263,7 @@
     background-color: var(--bg-color);
     position: absolute;
     top: 0;
-    clip-path: polygon(0 0, 0 100%, 50% 0, 100% 100%, 100% 0);
+    clip-path: polygon(0 0, 0 50%, 50% 0, 100% 50%, 100% 0);
   }
 
   .blue-bg-area::after {
@@ -273,7 +273,7 @@
     background-color: var(--bg-color);
     position: absolute;
     bottom: 0;
-    clip-path: polygon(0 100%, 0 0, 50% 100%, 100% 0, 100% 100%);
+    clip-path: polygon(0 100%, 0 50%, 50% 100%, 100% 50%, 100% 100%);
   }
 
   .button-column {
@@ -412,6 +412,26 @@
   }
 
   @media (min-width: 1024px) {
+    .blue-bg-area::before {
+      content: "";
+      width: 100%;
+      height: 10rem;
+      background-color: var(--bg-color);
+      position: absolute;
+      top: 0;
+      clip-path: polygon(0 0, 0 100%, 50% 0, 100% 100%, 100% 0);
+    }
+
+    .blue-bg-area::after {
+      content: "";
+      width: 100%;
+      height: 10rem;
+      background-color: var(--bg-color);
+      position: absolute;
+      bottom: 0;
+      clip-path: polygon(0 100%, 0 0, 50% 100%, 100% 0, 100% 100%);
+    }
+
     .events {
       width: 100%;
       display: flex;

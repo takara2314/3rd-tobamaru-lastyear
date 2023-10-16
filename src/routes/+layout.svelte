@@ -178,7 +178,7 @@
 <style>
   menu {
     width: calc(100% - 2rem);
-    height: 5rem;
+    height: 4rem;
     background-color: white;
     box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
     border-radius: 1rem;
@@ -197,7 +197,7 @@
     width: 100%;
     display: flex;
     flex-direction: row;
-    gap: 2rem;
+    gap: 1rem;
   }
 
   button.hamburger-btn {
@@ -295,7 +295,7 @@
     background-color: var(--primary-color);
     color: rgb(255, 255, 255);
     text-align: left;
-    padding: 3rem;
+    padding: 2rem;
   }
 
   footer ul {
@@ -318,6 +318,13 @@
       left: 1.5rem;
       right: 1.5rem;
       z-index: 10;
+    }
+
+    menu div {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      gap: 2rem;
     }
 
     button.hamburger-btn {
@@ -363,6 +370,15 @@
     ul.pc li a div img {
       width: 100%;
       margin-bottom: -0.5rem;
+    }
+
+    footer {
+      width: 100%;
+      height: 15rem;
+      background-color: var(--primary-color);
+      color: rgb(255, 255, 255);
+      text-align: left;
+      padding: 3rem;
     }
   }
 </style>

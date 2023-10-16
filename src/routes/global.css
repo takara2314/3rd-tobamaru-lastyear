@@ -20,6 +20,7 @@ body {
   text-align: center;
   color: var(--text-color);
   background-color: var(--bg-color);
+  -webkit-tap-highlight-color: transparent;
 }
 
 header {
