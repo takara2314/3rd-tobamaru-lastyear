@@ -1,6 +1,7 @@
 <script>
   import PrimaryBtn from "../components/buttons/PrimaryBtn.svelte";
   import SecondaryBtn from "../components/buttons/SecondaryBtn.svelte";
+  import CommonWave from "../components/waves/CommonWave.svelte";
 
   const news = [
     {
@@ -57,6 +58,9 @@
     src="/photos/header.webp"
     alt="ヘッダー"
   />
+  <div class="header-wave">
+    <CommonWave />
+  </div>
 </header>
 
 <main>
@@ -248,6 +252,29 @@
 </main>
 
 <style>
+  header {
+    width: 100%;
+    height: 95dvh;
+    background-color: rgb(134, 134, 225);
+    position: relative;
+  }
+
+  header img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .header-wave {
+    width: 100%;
+    color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+
   .blue-bg-area {
     background-color: var(--section-bg-color);
     display: flex;

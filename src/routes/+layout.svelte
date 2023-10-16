@@ -1,6 +1,7 @@
 <script>
   import "./reset.css";
   import "./global.css";
+  import CommonWave from "../components/waves/CommonWave.svelte";
 
   let isShowModal = false;
 
@@ -152,6 +153,9 @@
 </ul>
 
 <footer>
+  <div class="footer-wave">
+    <CommonWave />
+  </div>
   <ul>
     <li>
       <a href="https://www.toba-cmt.ac.jp/">
@@ -168,11 +172,12 @@
         このサイトのソースコード
       </a>
     </li>
+    <li class="copyright">
+      <small>
+        © 2023 Tobamaru Project Team
+      </small>
+    </li>
   </ul>
-
-  <small>
-    © 2023 Tobamaru Project Team
-  </small>
 </footer>
 
 <style>
@@ -291,15 +296,24 @@
 
   footer {
     width: 100%;
-    height: 15rem;
+  }
+
+  footer ul {
     background-color: var(--primary-color);
     color: rgb(255, 255, 255);
     text-align: left;
     padding: 2rem;
   }
 
-  footer ul {
-    margin-bottom: 2rem;
+  .copyright {
+    margin-top: 2rem;
+  }
+
+  .footer-wave {
+    width: 100%;
+    color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
   }
 
   @media (min-width: 1024px) {
@@ -371,7 +385,7 @@
       width: 100%;
       margin-bottom: -0.5rem;
     }
-
+/* 
     footer {
       width: 100%;
       height: 15rem;
@@ -379,6 +393,6 @@
       color: rgb(255, 255, 255);
       text-align: left;
       padding: 3rem;
-    }
+    } */
   }
 </style>
