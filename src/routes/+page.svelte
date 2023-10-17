@@ -8,42 +8,28 @@
   const news = [
     {
       name: "ホームページをリニューアルしました",
-      date: "2023-07-16",
-      href: "/#",
+      date: "2023-10-20",
+      href: "/news/hp-renewal",
       image: "/photos/tobamaru.webp"
+    },
+    {
+      name: "2023鳥羽丸フォトコンテストを開催します！",
+      date: "2022-10-08",
+      href: "/news/2023-photo-contest",
+      image: "/photos/commemorative-photo.webp"
     },
     {
       name: "第一回 鳥羽丸見学を実施しました",
       date: "2023-04-21",
-      href: "/#",
+      href: "/news/1st-tobamaru-visit",
       image: "/photos/looking.webp"
-    },
-    {
-      name: "フォトコンテストの結果発表",
-      date: "2022-12-04",
-      href: "/#",
-      image: "/photos/commemorative-photo.webp"
     }
   ];
 
   const events = [
     {
-      name: "オープンキャンパス",
-      date: ["2023-08-10,11", "10:00～13:00"],
-      target: ["中学生"],
-      neededApplication: true,
-      okUnofficialParticipate: false
-    },
-    {
-      name: "第二回 鳥羽丸見学",
-      date: ["2023-09-25", "16:30～17:00"],
-      target: ["J科学生", "S1学生"],
-      neededApplication: false,
-      okUnofficialParticipate: true
-    },
-    {
-      name: "鳥羽丸フォトコンテスト",
-      date: ["2023-12-03", "12:00"],
+      name: "2023鳥羽丸フォトコンテスト",
+      date: ["2023-11-08", "17:00"],
       target: ["鳥羽商船学生"],
       neededApplication: false,
       okUnofficialParticipate: false
