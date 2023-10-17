@@ -3,14 +3,14 @@
   import "./global.css";
   import CommonWave from "../components/waves/CommonWave.svelte";
 
-  let isShowModal = false;
+  let isShowMenu = false;
 
   function handleClickHamburger() {
-    isShowModal = !isShowModal;
+    isShowMenu = !isShowMenu;
   }
 
   function handleModalClickBackground() {
-    isShowModal = false;
+    isShowMenu = false;
   }
 </script>
 
@@ -18,6 +18,10 @@
   <div>
     <button
       class="hamburger-btn"
+      aria-label="メニューを開く"
+      aria-expanded={isShowMenu}
+      aria-controls="menu-container"
+      aria-haspopup="menu"
       on:click={handleClickHamburger}
     >
       <div />
@@ -88,12 +92,12 @@
 <!-- svelte-ignore a11y-no-static-element-interactions -->
 <div
   class="modal-background"
-  style={isShowModal ? "display:block" : "display:none"}
+  style={isShowMenu ? "display:block" : "display:none"}
   on:click={handleModalClickBackground}
 />
 <ul
   class="sp"
-  style={isShowModal ? "display:block" : "display:none"}
+  style={isShowMenu ? "display:block" : "display:none"}
 >
   <li class="title-area">
     <h1 class="title">
