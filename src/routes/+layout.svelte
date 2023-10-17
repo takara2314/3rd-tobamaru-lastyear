@@ -318,6 +318,16 @@
     color: var(--primary-color);
     display: flex;
     flex-direction: column;
+    position: relative;
+  }
+
+  .footer-wave::after {
+    content: "";
+    width: 100%;
+    height: 0.5rem;
+    background-color: var(--primary-color);
+    position: absolute;
+    bottom: -0.2rem;
   }
 
   @media (min-width: 1024px) {
