@@ -246,12 +246,14 @@
       <div class="button-column">
         <p>
           <SecondaryBtn
-            label="活動方針"
+            label="活動規約"
+            href="/terms.pdf"
           />
         </p>
         <p>
           <PrimaryBtn
             label="私もチームの一員になりたい！"
+            href="/joinus"
           />
         </p>
       </div>

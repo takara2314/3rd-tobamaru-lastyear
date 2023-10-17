@@ -49,7 +49,6 @@
         </a>
       </li>
     </ul>
-
   </article>
 </main>
 
