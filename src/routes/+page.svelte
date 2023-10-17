@@ -346,7 +346,7 @@
     height: 100%;
   }
 
-  .news a button {
+  .news a {
     width: 100%;
     height: 100%;
     border-radius: 1rem;
@@ -472,6 +472,13 @@
       position: absolute;
       bottom: 0;
       clip-path: polygon(0 100%, 0 0, 50% 100%, 100% 0, 100% 100%);
+    }
+
+    .news {
+      width: 90vw;
+      height: 23.5rem;
+      margin-top: 2rem;
+      overflow-x: auto;
     }
 
     .events {
