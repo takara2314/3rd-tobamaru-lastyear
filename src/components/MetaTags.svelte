@@ -1,6 +1,9 @@
 <script>
   import { MetaTags } from "svelte-meta-tags";
-  import { PUBLIC_SITE_URL } from "$env/static/public";
+  import {
+    PUBLIC_SITE_URL,
+    PUBLIC_X_NAME
+  } from "$env/static/public";
 
   export let title;
   export let description;
@@ -27,8 +30,8 @@
       siteName: "Tobamaru Project Team"
     },
     twitter: {
-      handle: "@3rdTOBAMARUprg",
-      site: "@3rdTOBAMARUprg",
+      handle: `@${PUBLIC_X_NAME}`,
+      site: `@${PUBLIC_X_NAME}`,
       cardType: "summary_large_image",
       title: href !== "/" ? `${title} | Tobamaru Project Team` : "Tobamaru Project Team",
       description: description,
