@@ -1,7 +1,6 @@
 <script>
   import MetaTags from "../../components/MetaTags.svelte";
-  import PrimaryBtn from "../../components/buttons/PrimaryBtn.svelte";
-  import SecondaryBtn from "../../components/buttons/SecondaryBtn.svelte";
+  import H2 from "../../components/headers/H2.svelte";
 </script>
 
 <MetaTags
@@ -11,21 +10,12 @@
 />
 
 <main>
-  <h2>
-    鳥羽丸の歴史
-  </h2>
-  工事中
+  <article>
+    <H2>
+      鳥羽丸の歴史
+    </H2>
+    <div>
+      Coming soon...
+    </div>
+  </article>
 </main>
-
-<style>
-  main {
-    min-height: calc(100svh - (20rem + 15rem));
-    margin: 10rem 0;
-  }
-
-  h2 {
-    font-size: 3rem;
-    font-weight: bold;
-    margin-bottom: 5rem;
-  }
-</style>

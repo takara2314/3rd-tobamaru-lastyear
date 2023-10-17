@@ -54,11 +54,6 @@
 </main>
 
 <style>
-  main {
-    min-height: calc(100svh - (20rem + 15rem));
-    margin: 10rem 0;
-  }
-
   ul {
     margin-top: 3rem;
     display: flex;

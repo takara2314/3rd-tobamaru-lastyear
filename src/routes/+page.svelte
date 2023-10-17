@@ -292,6 +292,11 @@
     bottom: -0.2rem;
   }
 
+  main {
+    min-height: auto;
+    margin: auto;
+  }
+
   .blue-bg-area {
     background-color: var(--section-bg-color);
     display: flex;
