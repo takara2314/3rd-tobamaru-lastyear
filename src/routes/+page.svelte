@@ -14,7 +14,7 @@
     },
     {
       name: "2023鳥羽丸フォトコンテストを開催します！",
-      date: "2022-10-08",
+      date: "2023-10-08",
       href: "/news/2023-photo-contest",
       image: "/photos/commemorative-photo.webp"
     },
