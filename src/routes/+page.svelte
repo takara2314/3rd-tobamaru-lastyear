@@ -91,6 +91,7 @@
 
       <PrimaryBtn
         label="詳しいプロフィールを見る！"
+        href="/3rd-tobamaru"
       />
     </article>
   </section>
