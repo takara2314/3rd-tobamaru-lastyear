@@ -167,8 +167,8 @@
       </a>
     </li>
     <li>
-      <a href="/#">
-        プライバシーポリシー
+      <a href="https://www.maritime.toba-cmt.ac.jp/">
+        商船学科 ウェブサイト
       </a>
     </li>
     <li>
