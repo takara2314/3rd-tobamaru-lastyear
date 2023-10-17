@@ -1,5 +1,6 @@
 <script>
   import MetaTags from "../../components/MetaTags.svelte";
+  import PrimaryBtn from "../../components/buttons/PrimaryBtn.svelte";
   import H2 from "../../components/headers/H2.svelte";
 </script>
 
@@ -33,6 +34,19 @@
       Coming soon...
     </menu>
   </div>
+
+  <article id="real-experience">
+    <H2>
+      現地で体験してみたいキミへ
+    </H2>
+    <div>
+      実際に現地で体験してみたいキミは、鳥羽丸見学イベントに参加することをオススメします！
+    </div>
+    <PrimaryBtn
+      href="/#events"
+      label="イベント情報を見る"
+    />
+  </article>
 </main>
 
 <style>
@@ -65,6 +79,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  #real-experience {
+    margin-top: 15rem;
+  }
+
+  #real-experience > div {
+    margin-bottom: 1.5rem;
   }
 
   @media (min-width: 1024px) {
