@@ -49,10 +49,11 @@
 />
 
 <header>
-  <img
-    src="/photos/header.webp"
-    alt="ヘッダー"
-  />
+  <!-- svelte-ignore a11y-media-has-caption -->
+  <video autoplay muted loop preload="none">
+    <source src="/web-promotion.webm" type="video/webm" />
+    <source src="/web-promotion.mp4" type="video/mp4" />
+  </video>
   <div class="header-wave">
     <CommonWave />
   </div>
@@ -254,12 +255,12 @@
 <style>
   header {
     width: 100%;
-    height: 95dvh;
-    background-color: rgb(134, 134, 225);
+    height: 90dvh;
+    background-color: black;
     position: relative;
   }
 
-  header img {
+  header video {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -454,6 +455,13 @@
   }
 
   @media (min-width: 1024px) {
+    header {
+      width: 100%;
+      height: 98dvh;
+      background-color: black;
+      position: relative;
+    }
+
     .blue-bg-area::before {
       content: "";
       width: 100%;
