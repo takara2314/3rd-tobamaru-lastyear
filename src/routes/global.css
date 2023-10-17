@@ -61,7 +61,7 @@ button {
 }
 
 .left-image {
-  height: 70dvh;
+  height: 70svh;
   position: relative;
 }
 
@@ -83,7 +83,7 @@ button {
 }
 
 .right-image {
-  height: 70dvh;
+  height: 70svh;
   position: relative;
 }
 
@@ -151,7 +151,7 @@ button {
   }
 
   .left-image {
-    height: 70dvh;
+    height: 70svh;
     padding-right: 3rem;
     position: relative;
   }
@@ -167,7 +167,7 @@ button {
   }
 
   .right-image {
-    height: 70dvh;
+    height: 70svh;
     padding-left: 3rem;
     position: relative;
   }
