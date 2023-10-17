@@ -33,7 +33,7 @@
       target: ["鳥羽商船学生"],
       neededApplication: false,
       okUnofficialParticipate: false,
-      href: "/news/1st-tobamaru-visit"
+      href: "/news/2023-photo-contest"
     }
   ];
 </script>
