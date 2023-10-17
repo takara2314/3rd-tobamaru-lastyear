@@ -2,6 +2,10 @@
   import "./reset.css";
   import "./global.css";
   import CommonWave from "../components/waves/CommonWave.svelte";
+  import {
+    PUBLIC_INSTAGRAM_NAME,
+    PUBLIC_X_NAME
+  } from "$env/static/public";
 
   let isShowMenu = false;
 
@@ -160,28 +164,60 @@
   <div class="footer-wave">
     <CommonWave />
   </div>
-  <ul>
-    <li>
-      <a href="https://www.toba-cmt.ac.jp/">
-        鳥羽商船高等専門学校 ウェブサイト
-      </a>
-    </li>
-    <li>
-      <a href="https://www.maritime.toba-cmt.ac.jp/">
-        商船学科 ウェブサイト
-      </a>
-    </li>
-    <li>
-      <a href="https://github.com/takara2314/3rd-tobamaru-lastyear/tree/v2-develop">
-        このサイトのソースコード
-      </a>
-    </li>
-    <li class="copyright">
-      <small>
-        © 2023 Tobamaru Project Team
-      </small>
-    </li>
-  </ul>
+
+  <div class="sns-area-parent">
+    <ul class="site-link-area">
+      <li>
+        <a href="https://www.toba-cmt.ac.jp/">
+          鳥羽商船高等専門学校 ウェブサイト
+        </a>
+      </li>
+      <li>
+        <a href="https://www.maritime.toba-cmt.ac.jp/">
+          商船学科 ウェブサイト
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/takara2314/3rd-tobamaru-lastyear/tree/v2-develop">
+          このサイトのソースコード
+        </a>
+      </li>
+      <li class="copyright">
+        <small>
+          © 2023 Tobamaru Project Team
+        </small>
+      </li>
+    </ul>
+
+    <ul class="sns-area">
+      <li>
+        <a href={`https://instagram.com/${PUBLIC_INSTAGRAM_NAME}/`}>
+          <button
+            aria-label="インスタグラムのリンク"
+            class="mail"
+          >
+            <img
+              src="/logos/instagram.svg"
+              alt="Instagram"
+            />
+          </button>
+        </a>
+      </li>
+      <li>
+        <a href={`https://x.com/${PUBLIC_X_NAME}`}>
+          <button
+            aria-label="X（旧Twitter）のリンク"
+            class="x"
+          >
+            <img
+              src="/logos/x.svg"
+              alt="X"
+            />
+          </button>
+        </a>
+      </li>
+    </ul>
+  </div>
 </footer>
 
 <style>
@@ -303,7 +339,6 @@
   }
 
   footer ul {
-    background-color: var(--primary-color);
     color: rgb(255, 255, 255);
     text-align: left;
     padding: 2rem;
@@ -328,6 +363,35 @@
     background-color: var(--primary-color);
     position: absolute;
     bottom: -0.2rem;
+  }
+
+  .sns-area-parent {
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .site-link-area {
+    width: 100%;
+  }
+
+  .sns-area {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .sns-area li {
+    width: 5rem;
+    height: 5rem;
+    background-color: white;
+    border-radius: 1rem;
+  }
+
+  .sns-area img {
+    width: 100%;
+    padding: 1.25rem;
   }
 
   @media (min-width: 1024px) {
@@ -405,6 +469,23 @@
       color: rgb(255, 255, 255);
       text-align: left;
       padding: 3rem;
+    }
+
+    .sns-area-parent {
+      background-color: var(--primary-color);
+      display: flex;
+      flex-direction: row;
+    }
+
+    .site-link-area {
+      width: 75%;
+    }
+
+    .sns-area {
+      width: 25%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
     }
   }
 </style>
