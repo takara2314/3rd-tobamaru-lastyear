@@ -143,7 +143,7 @@
           {#each events as event}
             <li>
               <a href={event.href}>
-                <button>
+                <button aria-label={event.name}>
                   <h3>
                     {event.name}
                   </h3>
