@@ -26,8 +26,8 @@
     width: 20rem;
     height: 0.25rem;
     color: var(--gray-wave-color);
-    position: absolute;
-    top: 2.5rem;
+    position: relative;
+    top: 1rem;
   }
 
   h2 > div[whiteWave] {
