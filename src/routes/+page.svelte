@@ -32,7 +32,8 @@
       date: ["2023-11-08", "17:00"],
       target: ["鳥羽商船学生"],
       neededApplication: false,
-      okUnofficialParticipate: false
+      okUnofficialParticipate: false,
+      href: "/news/1st-tobamaru-visit"
     }
   ];
 </script>
@@ -140,31 +141,33 @@
         <ul class="events">
           {#each events as event}
             <li>
-              <button>
-                <h3>
-                  {event.name}
-                </h3>
-                <div class="date">
-                  {event.date[0]}
-                  <span>・</span>
-                  {event.date[1]}
-                </div>
-                <ul class="badge">
-                  <li class="target">
-                    対象: {event.target.join(", ")}
-                  </li>
-                  {#if event.neededApplication}
-                    <li class="needed-application">
-                      予約必須
+              <a href={event.href}>
+                <button>
+                  <h3>
+                    {event.name}
+                  </h3>
+                  <div class="date">
+                    {event.date[0]}
+                    <span>・</span>
+                    {event.date[1]}
+                  </div>
+                  <ul class="badge">
+                    <li class="target">
+                      対象: {event.target.join(", ")}
                     </li>
-                  {/if}
-                  {#if event.okUnofficialParticipate}
-                    <li class="ok-unofficial-participate">
-                      飛び入り参加歓迎
-                    </li>
-                  {/if}
-                </ul>
-              </button>
+                    {#if event.neededApplication}
+                      <li class="needed-application">
+                        予約必須
+                      </li>
+                    {/if}
+                    {#if event.okUnofficialParticipate}
+                      <li class="ok-unofficial-participate">
+                        飛び入り参加歓迎
+                      </li>
+                    {/if}
+                  </ul>
+                </button>
+              </a>
             </li>
           {/each}
         </ul>
@@ -342,7 +345,7 @@
     height: 100%;
   }
 
-  .news a {
+  .news a button {
     width: 100%;
     height: 100%;
     border-radius: 1rem;
@@ -391,7 +394,7 @@
     margin-bottom: 1rem;
   }
 
-  .events > li > button {
+  .events > li > a > button {
     width: 100%;
     text-align: left;
     background-color: var(--bg-color);
