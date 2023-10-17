@@ -287,7 +287,7 @@
     content: "";
     width: 100%;
     height: 0.5rem;
-    background-color: white;
+    background-color: var(--bg-color);
     position: absolute;
     bottom: -0.2rem;
   }
