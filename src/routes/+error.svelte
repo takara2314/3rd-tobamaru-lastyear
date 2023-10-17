@@ -6,7 +6,7 @@
 </script>
 
 <MetaTags
-  title="404"
+  title="お探しの港は見当たりません"
   description="存在しないページです"
   href="/point"
 />
