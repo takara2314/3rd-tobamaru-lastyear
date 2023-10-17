@@ -400,15 +400,16 @@
 
   .events h3 {
     color: var(--primary-color);
-    font-size: 1.5rem;
     margin-bottom: 0.5rem;
   }
 
   .events .date {
     margin-bottom: 0.5rem;
+    font-size: 1rem;
   }
 
   .events .badge {
+    font-size: 1rem;
     display: flex;
     flex-direction: row;
   }
