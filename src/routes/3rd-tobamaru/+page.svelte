@@ -1,5 +1,6 @@
 <script>
   import MetaTags from "../../components/MetaTags.svelte";
+    import PrimaryBtn from "../../components/buttons/PrimaryBtn.svelte";
   import H2 from "../../components/headers/H2.svelte";
 
   const profiles = [
@@ -61,6 +62,9 @@
     <H2>
       3代目鳥羽丸
     </H2>
+    <div>
+      鳥羽丸（とばまる）とは、鳥羽商船高等専門学校が保有する練習船です。
+    </div>
 
     <table>
       <tbody>
@@ -69,13 +73,18 @@
             <th>
               {profile.label}
             </th>
-            <td class="text-left" id="generated-id-1697519727797-itfx8ull5">
+            <td class="text-left">
               {profile.value}
             </td>
           </tr>
         {/each}
       </tbody>
     </table>
+
+    <PrimaryBtn
+      label="商船学科のページで詳しく見る！"
+      href="https://www.maritime.toba-cmt.ac.jp/tobamaru/"
+    />
   </article>
 </main>
 
@@ -88,12 +97,37 @@
 
   table {
     width: 90%;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    text-align: left;
+  }
+
+  tr {
+    line-height: 3rem;
+    border-bottom: solid 0.1rem rgb(226, 226, 226);
   }
 
   th {
     width: 50%;
   }
+
   td {
     width: 50%;
+  }
+
+  @media (min-width: 1024px) {
+    table {
+      width: 60%;
+      margin-top: 3rem;
+      text-align: left;
+    }
+
+    th {
+      width: 20%;
+    }
+
+    td {
+      width: 80%;
+    }
   }
 </style>
