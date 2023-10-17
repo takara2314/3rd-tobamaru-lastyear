@@ -283,6 +283,15 @@
     bottom: 0;
   }
 
+  .header-wave::after {
+    content: "";
+    width: 100%;
+    height: 0.5rem;
+    background-color: white;
+    position: absolute;
+    bottom: -0.2rem;
+  }
+
   .blue-bg-area {
     background-color: var(--section-bg-color);
     display: flex;
