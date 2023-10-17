@@ -2,7 +2,7 @@
   import MetaTags from "../../components/MetaTags.svelte";
   import H2 from "../../components/headers/H2.svelte";
   import {
-    PUBLIC_CHAIRPERSON_EMAIL,
+    PUBLIC_TEAM_EMAIL,
     PUBLIC_X_NAME
   } from "$env/static/public";
 </script>
@@ -29,7 +29,7 @@
 
     <ul>
       <li>
-        <a href={`mailto:${PUBLIC_CHAIRPERSON_EMAIL}`}>
+        <a href={`mailto:${PUBLIC_TEAM_EMAIL}`}>
           <button
             aria-label="メールでお問い合わせ"
             class="mail"
