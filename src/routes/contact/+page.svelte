@@ -68,7 +68,7 @@
   }
 
   li {
-    width: 25rem;
+    width: 20rem;
     height: 3rem;
   }
 
@@ -93,5 +93,12 @@
     color: white;
     background-color: rgb(15, 20, 25);
     box-shadow: 0 0.25rem 0.1rem rgba(15, 20, 25, 0.25);
+  }
+
+  @media (min-width: 1024px) {
+    li {
+      width: 25rem;
+      height: 3rem;
+    }
   }
 </style>
