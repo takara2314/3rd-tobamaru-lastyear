@@ -30,14 +30,20 @@
     <ul>
       <li>
         <a href={`mailto:${PUBLIC_CHAIRPERSON_EMAIL}`}>
-          <button class="mail">
+          <button
+            aria-label="メールでお問い合わせ"
+            class="mail"
+          >
             メールでお問い合わせ
           </button>
         </a>
       </li>
       <li>
         <a href={`https://x.com/${PUBLIC_X_NAME}`}>
-          <button class="x">
+          <button
+            aria-label="X（旧Twitter）でお問い合わせ"
+            class="x"
+          >
             X（旧Twitter）でお問い合わせ
           </button>
         </a>

@@ -202,7 +202,7 @@
         </div>
       </article>
       <iframe
-        title="Instagram Feed"
+        title="Instagramの投稿"
         src="https://snapwidget.com/embed/1017460"
         class="snapwidget-widget instagram-feed"
       />
