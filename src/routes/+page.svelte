@@ -274,6 +274,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: top 0 right -40vw;
   }
 
   .header-wave {
@@ -549,6 +550,13 @@
       height: 98dvh;
       background-color: black;
       position: relative;
+    }
+
+    header video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top 0 right 0;
     }
 
     .scroll-down-area {
