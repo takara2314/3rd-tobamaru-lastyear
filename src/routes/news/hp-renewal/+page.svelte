@@ -15,7 +15,12 @@
       ホームページをリニューアルしました
     </H2>
     <div>
-      Coming soon...
+      <p>
+        より見やすく、楽しいホームページになりました！
+      </p>
+      <p>
+        旧ページ同様に、鳥羽丸やTobamaru Project Teamのイベント情報をお届けします。
+      </p>
     </div>
   </article>
 </main>
