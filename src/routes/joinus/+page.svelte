@@ -136,7 +136,7 @@
 
   li {
     width: 20rem;
-    height: 10rem;
+    height: 11.5rem;
     font-size: 1rem;
     padding: 1rem;
     box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
