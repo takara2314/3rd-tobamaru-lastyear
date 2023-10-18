@@ -11,17 +11,17 @@
     {
       name: "フォトコン班",
       description: " 主に「2023鳥羽丸フォトコンテスト」について担当し、海学祭展示などを行います。",
-      comment: ""
+      comment: "J科学生も活躍中！"
     },
     {
       name: "クラフト班",
       description: "鳥羽丸グッズの制作と海学祭模擬店での販売を担当します。",
-      comment: "J科学生も活躍中！"
+      comment: "J科学生がグッズ制作！"
     },
     {
       name: "広報班",
       description: "鳥羽丸やTobamaru Project Teamについての広報を担当します。",
-      comment: "J科学生も活躍中！"
+      comment: "J科学生が当サイトを作成！"
     },
     {
       name: "渉外班",
