@@ -54,9 +54,19 @@
     <source src="/web-promotion.webm" type="video/webm" />
     <source src="/web-promotion.mp4" type="video/mp4" />
   </video>
+
   <div class="header-wave">
     <CommonWave />
   </div>
+
+  <section class="scroll-down-area">
+    <div class="scroll-down">
+      <span class="arrow-down" />
+      <span class="scroll-title">
+        Scroll down
+      </span>
+    </div>
+  </section>
 </header>
 
 <main>
@@ -285,6 +295,85 @@
     bottom: -0.2rem;
   }
 
+  .scroll-down-area {
+    width: 8rem;
+    height: 10rem;
+    position: absolute;
+    bottom: -15rem;
+    right: 0;
+  }
+
+  .scroll-down {
+    display: block;
+    position: relative;
+    padding-top: 5.5rem;
+    text-align: center;
+  }
+
+  .arrow-down {
+    display: block;
+    margin: 0 auto;
+    width: 0.5rem;
+    height: 1rem;
+  }
+
+  .arrow-down:after {
+    content: '';
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-top: 0.15rem solid var(--bg-color);
+    border-right: 0.15rem solid var(--bg-color);
+    transform: rotate(135deg);
+  }
+
+  .scroll-title {
+    display: block;
+    text-transform: uppercase;
+    color: var(--bg-color);
+    font-size: 0.75rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    rotate: 90deg;
+    transform: translate(-4.25rem, -1.5rem);
+  }
+
+  .scroll-down::before {
+    animation: elasticus 1.5s cubic-bezier(1, 0, 0, 1) infinite;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -0.1rem;
+    width: 0.15rem;
+    height: 5.5rem;
+    background: var(--bg-color);
+    content: ' ';
+  }
+
+  @keyframes elasticus {
+    0% {
+      transform-origin: 0% 0%;
+      transform: scale(1, 0);
+    }
+
+    50% {
+      transform-origin: 0% 0%;
+      transform: scale(1, 1);
+    }
+
+    50.1% {
+      transform-origin: 0% 100%;
+      transform: scale(1, 1);
+    }
+
+    100% {
+      transform-origin: 0% 100%;
+      transform: scale(1, 0);
+    }
+  }
+
   main {
     min-height: auto;
     margin: auto;
@@ -460,6 +549,14 @@
       height: 98dvh;
       background-color: black;
       position: relative;
+    }
+
+    .scroll-down-area {
+      width: 8rem;
+      height: 10rem;
+      position: absolute;
+      bottom: -12rem;
+      right: 1rem;
     }
 
     .blue-bg-area::before {
