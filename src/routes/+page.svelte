@@ -29,10 +29,9 @@
   const events = [
     {
       name: "2023鳥羽丸フォトコンテスト",
-      date: ["2023-11-08", "17:00"],
+      date: ["2023-11-08 ～ 12-08"],
       target: ["鳥羽商船学生"],
-      neededApplication: false,
-      okUnofficialParticipate: false,
+      comment: "応募期間中！",
       href: "/news/2023-photo-contest"
     }
   ];
@@ -160,21 +159,18 @@
                   </h3>
                   <div class="date">
                     {event.date[0]}
-                    <span>・</span>
-                    {event.date[1]}
+                    {#if event.date.length > 1}
+                      <span>・</span>
+                      {event.date[1]}
+                    {/if}
                   </div>
                   <ul class="badge">
                     <li class="target">
                       対象: {event.target.join(", ")}
                     </li>
-                    {#if event.neededApplication}
-                      <li class="needed-application">
-                        予約必須
-                      </li>
-                    {/if}
-                    {#if event.okUnofficialParticipate}
-                      <li class="ok-unofficial-participate">
-                        飛び入り参加歓迎
+                    {#if event.comment !== ""}
+                      <li class="comment">
+                        {event.comment}
                       </li>
                     {/if}
                   </ul>
@@ -522,7 +518,7 @@
     border-radius: 1rem;
   }
 
-  .events .needed-application {
+  .events .comment {
     color: rgb(239, 68, 68);
     background-color: var(--secondary-btn-bg-color);
     border-radius: 1rem;
