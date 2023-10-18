@@ -67,7 +67,7 @@
         alt="鳥羽丸"
       />
       <figcaption>
-        撮影者:　福野 泰介
+        撮影者:　福野 泰介様
       </figcaption>
     </figure>
 
