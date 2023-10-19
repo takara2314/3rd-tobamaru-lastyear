@@ -524,12 +524,6 @@
     border-radius: 1rem;
   }
 
-  .events .ok-unofficial-participate {
-    color: rgb(101, 163, 13);
-    background-color: var(--secondary-btn-bg-color);
-    border-radius: 1rem;
-  }
-
   .instagram-feed {
     width: 100vw;
     height: 100vw;
