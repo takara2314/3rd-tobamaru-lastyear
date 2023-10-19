@@ -17,6 +17,7 @@
 	"type": "module",
 	"dependencies": {
 		"@vercel/analytics": "^1.1.1",
+		"super-sitemap": "^0.14.0",
 		"svelte-preprocess": "^5.0.4"
 	}
 }
