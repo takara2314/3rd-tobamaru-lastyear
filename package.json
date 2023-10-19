@@ -14,5 +14,8 @@
 		"svelte-meta-tags": "^3.0.4",
 		"vite": "^4.4.2"
 	},
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"@vercel/analytics": "^1.1.1"
+	}
 }
