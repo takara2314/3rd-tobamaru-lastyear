@@ -14,7 +14,6 @@
     titleTemplate: href !== "/" ? `${title} | Tobamaru Project Team` : "Tobamaru Project Team",
     description: description,
     canonical: `${PUBLIC_SITE_URL}${href}`,
-    robots: "noindex",
     openGraph: {
       url: `${PUBLIC_SITE_URL}${href}`,
       title: href !== "/" ? `${title} | Tobamaru Project Team` : "Tobamaru Project Team",
