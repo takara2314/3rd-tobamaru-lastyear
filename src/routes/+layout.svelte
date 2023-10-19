@@ -178,7 +178,7 @@
         </a>
       </li>
       <li>
-        <a href="https://github.com/takara2314/3rd-tobamaru-lastyear/tree/v2-develop">
+        <a href="https://github.com/takara2314/3rd-tobamaru-lastyear">
           このサイトのソースコード
         </a>
       </li>
