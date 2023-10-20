@@ -29,7 +29,7 @@
   const events = [
     {
       name: "2023鳥羽丸フォトコンテスト",
-      date: ["2023-11-08 ～ 12-08"],
+      date: ["2023-10-08 ～ 11-08"],
       target: ["鳥羽商船学生"],
       comment: "応募期間中！",
       href: "/news/2023-photo-contest"
