@@ -13,7 +13,7 @@
       image: "/photos/tobamaru.webp"
     },
     {
-      name: "2023鳥羽丸フォトコンテストを開催します！",
+      name: "2023鳥羽丸写真コンテストを開催します！",
       date: "2023-10-08",
       href: "/news/2023-photo-contest",
       image: "/photos/commemorative-photo.webp"
@@ -28,7 +28,7 @@
 
   const events = [
     {
-      name: "2023鳥羽丸フォトコンテスト",
+      name: "2023鳥羽丸写真コンテスト",
       date: ["2023-10-08 ～ 11-08"],
       target: ["鳥羽商船学生"],
       comment: "応募期間中！",
