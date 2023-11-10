@@ -34,10 +34,17 @@
 
   const events = [
     {
+      name: "第58回海学祭　模擬店",
+      date: ["2023-12-02 ～ 12-03"],
+      target: ["鳥羽商船学生", "一般"],
+      comment: "写真コンテストの表彰も実施",
+      href: "https://gakuseikai.toba-cmt.ac.jp/kaigakusai/"
+    },
+    {
       name: "【応募終了】2023鳥羽丸写真コンテスト",
       date: ["2023-10-08 ～ 11-08"],
       target: ["鳥羽商船学生"],
-      comment: "応募期間中！",
+      comment: "",
       href: "/news/2023-photo-contest"
     }
   ];
