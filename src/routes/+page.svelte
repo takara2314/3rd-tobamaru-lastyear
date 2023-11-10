@@ -7,6 +7,12 @@
 
   const news = [
     {
+      name: "新しい鳥羽丸の情報が日経新聞で紹介されました",
+      date: "2023-11-10",
+      href: "/news/new-tobamaru-nikkei",
+      image: "/news/new-tobamaru-nikkei/image.webp"
+    },
+    {
       name: "ホームページをリニューアルしました",
       date: "2023-10-20",
       href: "/news/hp-renewal",
