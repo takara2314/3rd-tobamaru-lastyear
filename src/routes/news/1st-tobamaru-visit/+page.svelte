@@ -11,7 +11,7 @@
 
 <main>
   <article>
-    <H2>
+    <H2 newsDatetime="2023-04-21 18:00">
       第一回 鳥羽丸見学を実施しました
     </H2>
     <div>

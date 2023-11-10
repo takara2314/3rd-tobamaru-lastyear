@@ -1,10 +1,18 @@
 <script>
   import HeaderWave from "../waves/HeaderWave.svelte";
+  export let newsDatetime = null;
   export let whiteWave = false;
 </script>
 
 <h2>
   <slot />
+
+  {#if newsDatetime}
+    <time datetime="{newsDatetime}">
+      {newsDatetime.split(" ")[0]}
+    </time>
+  {/if}
+
   <div whiteWave={whiteWave ? whiteWave : null}>
     <HeaderWave />
   </div>
@@ -37,5 +45,11 @@
     color: var(--white-wave-color);
     position: absolute;
     top: 2.5rem;
+  }
+
+  h2 > time {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    color: var(--text-color);
   }
 </style>
