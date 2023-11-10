@@ -260,10 +260,11 @@
 
 <style>
   header {
-    width: 100%;
+    width: 100dvw;
     height: 90dvh;
     background-color: black;
     position: relative;
+    overflow: hidden;
   }
 
   header video {
