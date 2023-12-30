@@ -131,7 +131,6 @@
   .awards {
     margin-top: 5rem;
     margin-bottom: 0;
-    padding: 4rem;
   }
 
   .award {
@@ -144,17 +143,18 @@
 
   .award div {
     padding-top: 5rem;
-    width: 50%;
+    width: 100%;
   }
 
   .award div h3 {
+    padding: 0 2rem;
     margin-bottom: 1rem;
     color: var(--primary-color);
     font-size: 2rem;
   }
 
   .award img {
-    width: 50%;
+    width: 100%;
   }
 
   .comment {
@@ -162,12 +162,37 @@
   }
 
   @media (min-width: 1024px) {
+    .awards {
+      margin-top: 5rem;
+      margin-bottom: 0;
+      padding: 4rem;
+    }
+
     .award {
       display: flex;
       flex-direction: row;
       justify-content: center;
       flex-direction: row-reverse;
       gap: 1rem;
+    }
+
+    .award div {
+      padding-top: 5rem;
+      width: 50%;
+    }
+
+    .award div h3 {
+      margin-bottom: 1rem;
+      color: var(--primary-color);
+      font-size: 2rem;
+    }
+
+    .award img {
+      width: 50%;
+    }
+
+    .comment {
+      margin-top: 5rem;
     }
   }
 </style>
