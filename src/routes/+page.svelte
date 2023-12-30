@@ -7,9 +7,15 @@
 
   const news = [
     {
+      name: "学校だよりの表紙にフォトコンテスト受賞作品が掲載されました",
+      date: "2023-12-30",
+      href: "/news/school-newsletter-95",
+      image: "/news/school-newsletter-95/newsletter-cover.webp"
+    },
+    {
       name: "【結果発表】2023鳥羽丸写真コンテストの結果発表",
       date: "2023-12-30",
-      href: "/news/2023-photo-contest-result",
+      href: "/news/2023-photo-contest-results",
       image: "/news/2023-photo-contest-results/1st-award.webp"
     },
     {
