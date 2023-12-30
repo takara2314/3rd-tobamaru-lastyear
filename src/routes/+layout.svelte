@@ -432,7 +432,7 @@
     }
 
     ul.pc {
-      width: calc(100% - 15rem);
+      width: calc(100% - 5rem);
       display: flex;
       flex-direction: row;
       justify-content: end;
