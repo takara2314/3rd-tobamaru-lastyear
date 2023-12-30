@@ -7,6 +7,12 @@
 
   const news = [
     {
+      name: "【結果発表】2023鳥羽丸写真コンテストの結果発表",
+      date: "2023-12-30",
+      href: "/news/2023-photo-contest-result",
+      image: "/news/2023-photo-contest-results/1st-award.webp"
+    },
+    {
       name: "新しい鳥羽丸の情報が日経新聞で紹介されました",
       date: "2023-11-10",
       href: "/news/new-tobamaru-nikkei",
