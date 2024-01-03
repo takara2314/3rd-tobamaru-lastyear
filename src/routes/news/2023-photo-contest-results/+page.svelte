@@ -9,63 +9,63 @@
       award: "最優秀賞",
       title: "We love Tobamaru",
       img: "/news/2023-photo-contest-results/1st-award.webp",
-      comment: "",
+      comment: "5年間お世話になった鳥羽丸と友人と一緒に撮った写真で入選することができ、とても嬉しいです！",
       awardWinnerClass: "商船学科航海コース5年 学生"
     },
     {
       award: "優秀賞",
       title: "寒そうな鳥羽丸",
       img: "/news/2023-photo-contest-results/2nd-award-1.webp",
-      comment: "",
+      comment: "珍しい雪の日に撮れたので色んな人に見てほしいと思います",
       awardWinnerClass: "商船学科航海コース3年 学生"
     },
     {
       award: "優秀賞",
       title: "夕焼けに映る鳥羽丸",
       img: "/news/2023-photo-contest-results/2nd-award-2.webp",
-      comment: "",
+      comment: "この度は、優秀賞を受賞する事ができて、本当に嬉しいです。来年は最優秀賞を受賞できるように尽力していきたいです。",
       awardWinnerClass: "商船学科2年 学生"
     },
     {
       award: "校長賞",
       title: "青い",
       img: "/news/2023-photo-contest-results/principal-award.webp",
-      comment: "",
+      comment: "この度は入選という結果でとても嬉しいです。まさか自分が撮影した写真が選ばれると思いませんでした。新しい第4代目鳥羽丸を見るのが待ち遠しいです！",
       awardWinnerClass: "商船学科航海コース3年 学生"
     },
     {
       award: "商船学科長賞",
       title: "係留中の鳥羽丸",
       img: "/news/2023-photo-contest-results/head-of-maritime-tech-award.webp",
-      comment: "",
+      comment: "見慣れた風景ですが、来年から見られないと思うと寂しいです。",
       awardWinnerClass: "商船学科航海コース3年 学生"
     },
     {
       award: "鳥羽丸船長賞",
       title: "池の浦の夕暮れ",
       img: "/news/2023-photo-contest-results/tobamaru-captain-award.webp",
-      comment: "",
+      comment: "この度の鳥羽丸フォトコンテストで、船長賞という素晴らしい賞をいただき、大変嬉しく思っております。低学年の頃に見たこの池の浦の夕焼けは、今でも鮮明に記憶に残っております。鳥羽丸が私を海技者として成長させてくれたことに感謝の気持ちもありますが、交代すると聞いて寂しい思いもいたします。ただ、「本当にありがとう」という気持ちを伝えたいと思っています。",
       awardWinnerClass: "高専46期 航海コース17年卒 OB"
     },
     {
       award: "鳥羽丸機関長賞",
       title: "お疲れさまでした",
       img: "/news/2023-photo-contest-results/tobamaru-chief-engineer-award.webp",
-      comment: "",
+      comment: "鳥羽丸の代替えの時期を鳥羽商船の生徒として迎えられて嬉しいです。",
       awardWinnerClass: "商船学科機関コース3年 学生"
     },
     {
       award: "鳥羽丸一等機関士賞",
       title: "実習後",
       img: "/news/2023-photo-contest-results/tobamaru-1st-engineer-award.webp",
-      comment: "",
+      comment: "当時は特に思うこともありませんでしたが、今見返すと感慨深いものがありました。",
       awardWinnerClass: "海事システム専攻科1年 学生"
     },
     {
       award: "鳥羽丸運航センター長賞",
       title: "腹減った",
       img: "/news/2023-photo-contest-results/tobamaru-operation-manager-award.webp",
-      comment: "",
+      comment: "選ばれてとても嬉しいです。",
       awardWinnerClass: "商船学科機関コース3年 学生"
     },
     {
@@ -108,9 +108,16 @@
           <p>
             受賞者: {awardWinnerClass}
           </p>
-          <p class="comment">
-            {comment}
-          </p>
+          {#if comment !== ""}
+            <div class="comment">
+              <h4>
+                受賞者のコメント
+              </h4>
+              <p>
+                {comment}
+              </p>
+            </div>
+          {/if}
         </div>
         <img src={img} alt={title} />
       </div>
@@ -141,12 +148,12 @@
     gap: 3rem;
   }
 
-  .award div {
+  .award > div {
     padding-top: 5rem;
     width: 100%;
   }
 
-  .award div h3 {
+  .award > div h3 {
     padding: 0 2rem;
     margin-bottom: 1rem;
     color: var(--primary-color);
@@ -158,7 +165,15 @@
   }
 
   .comment {
-    margin-top: 5rem;
+    margin-top: 3rem;
+    padding: 2rem;
+    background-color: var(--section-bg-color);
+    border-radius: 1rem;
+  }
+
+  .comment h4 {
+    margin-bottom: 1rem;
+    color: var(--primary-color);
   }
 
   @media (min-width: 1024px) {
@@ -176,12 +191,12 @@
       gap: 1rem;
     }
 
-    .award div {
+    .award > div {
       padding-top: 5rem;
       width: 50%;
     }
 
-    .award div h3 {
+    .award > div h3 {
       margin-bottom: 1rem;
       color: var(--primary-color);
       font-size: 2rem;
@@ -192,7 +207,16 @@
     }
 
     .comment {
-      margin-top: 5rem;
+      margin-top: 3rem;
+      padding: 2rem;
+      width: 100%;
+      background-color: var(--section-bg-color);
+      border-radius: 1rem;
+    }
+
+    .comment h4 {
+      margin-bottom: 1rem;
+      color: var(--primary-color);
     }
   }
 </style>
