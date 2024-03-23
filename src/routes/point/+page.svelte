@@ -15,7 +15,7 @@
       ここがスゴイ！
     </H2>
     <div>
-      Coming soon...
+      工事中
     </div>
   </article>
 </main>
