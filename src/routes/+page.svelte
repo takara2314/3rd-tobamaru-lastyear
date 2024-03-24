@@ -7,12 +7,6 @@
 
   const news = [
     {
-      name: "ページ追加のテスト",
-      date: "2024-03-24",
-      href: "/news/push-test",
-      image: "/photos/tobamaru.webp"
-    },
-    {
       name: "学校だよりの表紙にフォトコンテスト受賞作品が掲載されました",
       date: "2023-12-30",
       href: "/news/school-newsletter-95",
