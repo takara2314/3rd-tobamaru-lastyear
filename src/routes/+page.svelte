@@ -7,6 +7,12 @@
 
   const news = [
     {
+      name: "【予告】2024鳥羽丸写真コンテストを開催します！",
+      date: "2024-04-08",
+      href: "/news/2024-photo-contest",
+      image: "/news/2024-photo-contest/commemorative-photo.webp"
+    },
+    {
       name: "学校だよりの表紙にフォトコンテスト受賞作品が掲載されました",
       date: "2023-12-30",
       href: "/news/school-newsletter-95",
@@ -45,6 +51,13 @@
   ];
 
   const events = [
+    {
+      name: "【予告】2024鳥羽丸写真コンテスト",
+      date: ["2024-10-08 ～ 11-08"],
+      target: ["鳥羽商船学生"],
+      comment: "",
+      href: "/news/2024-photo-contest"
+    },
     {
       name: "第58回海学祭　模擬店",
       date: ["2023-12-02 ～ 12-03"],
@@ -274,7 +287,7 @@
         </p>
         <p>
           <PrimaryBtn
-            label="私もチームの一員になりたい！"
+            label="詳しく!(入会はこちらから)"
             href="/joinus"
           />
         </p>

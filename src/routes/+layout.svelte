@@ -199,6 +199,8 @@
             <img
               src="/logos/instagram.svg"
               alt="Instagram"
+              width="80px"
+              height="80px"
             />
           </button>
         </a>

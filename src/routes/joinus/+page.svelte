@@ -3,30 +3,64 @@
   import H2 from "../../components/headers/H2.svelte";
 
   const groups = [
+    // {
+    //   name: "鳥羽丸班",
+    //   description: "団体内で行う鳥羽丸見学の企画調整等を担当します。​",
+    //   comment: ""
+    // },
+    // {
+    //   name: "フォトコン班",
+    //   description: " 主に「2023鳥羽丸写真コンテスト」について担当し、海学祭展示などを行います。",
+    //   comment: "J科学生も活躍中！"
+    // },
+    // {
+    //   name: "クラフト班",
+    //   description: "鳥羽丸グッズの制作と海学祭模擬店での販売を担当します。",
+    //   comment: "J科学生がグッズ制作！"
+    // },
+    // {
+    //   name: "広報班",
+    //   description: "鳥羽丸やTobamaru Project Teamについての広報を担当します。",
+    //   comment: "J科学生が当サイトを作成！"
+    // },
+    // {
+    //   name: "渉外班",
+    //   description: "同窓会などの学外との調整を担当し、有名人の招致のためにテレビ局の企画への応募等を行います。",
+    //   comment: ""
+    // }
     {
-      name: "鳥羽丸班",
-      description: "団体内で行う鳥羽丸見学の企画調整等を担当します。​",
-      comment: ""
+       name: "鳥羽丸班",
+       description: "団体内で行う鳥羽丸見学の企画調整等を担当します。​また、鳥羽丸ラッピングやノートの作成なども行う予定です。",
+       comment: ""
     },
     {
-      name: "フォトコン班",
-      description: " 主に「2023鳥羽丸写真コンテスト」について担当し、海学祭展示などを行います。",
-      comment: "J科学生も活躍中！"
+       name: "配信班",
+       description: "これから行う予定である配信に向けた準備を行います。",
+       comment: ""
     },
     {
-      name: "クラフト班",
-      description: "鳥羽丸グッズの制作と海学祭模擬店での販売を担当します。",
-      comment: "J科学生がグッズ制作！"
+       name: "クラフト班",
+       description: "鳥羽丸グッズの制作と海学祭模擬店での販売を担当します。",
+       comment: "J科学生もグッズ制作！"
     },
     {
-      name: "広報班",
-      description: "鳥羽丸やTobamaru Project Teamについての広報を担当します。",
-      comment: "J科学生が当サイトを作成！"
+       name: "広報班",
+       description: "鳥羽丸やTobamaru Project Teamについての広報を担当します。",
+       comment: "J科学生が当サイトを作成！"
+    }
+  ];
+
+  const groups2 = [
+
+    {
+       name: "鳥羽丸グッズ作成",
+       description: "", // 鳥羽丸ストラップを作成し、第５８回海学祭で販売しました。
+       comment: ""
     },
     {
-      name: "渉外班",
-      description: "同窓会などの学外との調整を担当し、有名人の招致のためにテレビ局の企画への応募等を行います。",
-      comment: ""
+       name: "2023鳥羽丸写真コンテスト",
+       description: "",
+       comment: ""
     }
   ];
 </script>
@@ -68,7 +102,7 @@
     </H2>
 
     <ul>
-      {#each groups.slice(0, 3) as group}
+      {#each groups.slice(0, 2) as group}
         <li>
           <h3>
             {group.name}
@@ -82,7 +116,41 @@
     </ul>
 
     <ul class="second-line">
-      {#each groups.slice(3, groups.length) as group}
+      {#each groups.slice(2, groups.length) as group}
+        <li>
+          <h3>
+            {group.name}
+          </h3>
+          {group.description}
+          <div class="comment">
+            {group.comment}
+          </div>
+        </li>
+      {/each}
+    </ul>
+  </article>
+
+  <article id="oldworks">
+    <H2>
+      過去の活動
+    </H2>  
+
+    <ul>
+      {#each groups2.slice(0, 2) as group}
+        <li>
+          <h3>
+            {group.name}
+          </h3>
+          {group.description}
+          <div class="comment">
+            {group.comment}
+          </div>
+        </li>
+      {/each}
+    </ul>
+
+    <ul class="second-line">
+      {#each groups2.slice(2, groups2.length) as group}
         <li>
           <h3>
             {group.name}
@@ -118,6 +186,10 @@
   }
 
   #works {
+    margin-top: 15rem;
+  }
+
+  #oldworks {
     margin-top: 15rem;
   }
 
