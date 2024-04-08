@@ -10,7 +10,7 @@
       name: "【予告】2024鳥羽丸写真コンテストを開催します！",
       date: "2024-04-08",
       href: "/news/2024-photo-contest",
-      image: "/news/2024-photo-contest/commemorative-photo.webp"
+      image: "/news/2024-photo-contest/image.webp"
     },
     {
       name: "学校だよりの表紙にフォトコンテスト受賞作品が掲載されました",
