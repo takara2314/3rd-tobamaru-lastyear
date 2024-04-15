@@ -54,7 +54,7 @@
     {
       name: "【予告】2024鳥羽丸写真コンテスト",
       date: ["2024-10-08 ～ 11-08"],
-      target: ["鳥羽商船学生"],
+      target: ["鳥羽商船学生", "一般"],
       comment: "",
       href: "/news/2024-photo-contest"
     },
