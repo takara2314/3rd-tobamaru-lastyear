@@ -7,6 +7,12 @@
 
   const news = [
     {
+      name: "練習船「鳥羽丸」体験航海参加者募集",
+      date: "2024-05-09",
+      href: "/news/tobamaru-taiaken-24",
+      image: "/news/tobamaru-taiaken-24/image.webp"
+    },
+    {
       name: "【予告】2024鳥羽丸写真コンテストを開催します！",
       date: "2024-04-08",
       href: "/news/2024-photo-contest",
