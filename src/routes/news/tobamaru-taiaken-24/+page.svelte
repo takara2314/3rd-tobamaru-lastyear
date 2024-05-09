@@ -30,7 +30,7 @@
           href="https://www.toba-cmt.ac.jp/topics/entry/15504/"
           class="link"
         >
-          鳥羽商船高等専門学校 学校だより Vol.95（2023）
+          練習船「鳥羽丸」体験航海参加者募集（学校ホームページ）
         </a>
       </div>
     </div>
