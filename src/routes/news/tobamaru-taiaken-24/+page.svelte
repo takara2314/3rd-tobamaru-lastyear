@@ -27,7 +27,7 @@
 
       <div class="link-area">
         <a
-          href="https://koho.s.toba-cmt.ac.jp/wp/wp-content/uploads/edc0d96ed4864e51f27fb6fc7c9f64ae.pdf"
+          href="https://www.toba-cmt.ac.jp/topics/entry/15504/"
           class="link"
         >
           鳥羽商船高等専門学校 学校だより Vol.95（2023）
