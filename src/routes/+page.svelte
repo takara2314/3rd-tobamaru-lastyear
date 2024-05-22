@@ -7,7 +7,7 @@
 
   const news = [
     {
-      name: "３代目鳥羽丸記念航海乗船者募集",
+      name: "【応募は5月30日 17:00まで】３代目鳥羽丸記念航海乗船者募集",
       date: "2024-05-22",
       href: "/news/tobamaru-final-24",
       image: "/news/tobamaru-final-24/image.webp"

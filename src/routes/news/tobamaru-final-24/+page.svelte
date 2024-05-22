@@ -15,6 +15,11 @@
       ３代目鳥羽丸記念航海乗船者募集
     </H2>
 
+      <img
+        src="/news/tobamaru-final-24/image.webp"
+        alt="サムネイル画像"
+      />
+
     <div>
       <p>
         鳥羽丸退役セレモニー(全校集会)に先立ち、最終航海の乗船者を募集します。
@@ -40,7 +45,7 @@
           href="https://forms.office.com/r/1SMZizDg4V"
           class="link"
         >
-        応募フォーム
+        応募フォームはこちら
         </a>
       </div>
       <p>
