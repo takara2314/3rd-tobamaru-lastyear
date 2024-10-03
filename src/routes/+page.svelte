@@ -7,7 +7,13 @@
 
   const news = [
     {
-      name: "【応募は5月30日 17:00まで】３代目鳥羽丸記念航海乗船者募集",
+      name: "【募集中！】2024鳥羽丸写真コンテストを開催します！",
+      date: "2024-10-08",
+      href: "/news/2024-photo-contest",
+      image: "/news/2024-photo-contest/image.webp"
+    },
+    {
+      name: "【終了】３代目鳥羽丸記念航海乗船者募集",
       date: "2024-05-22",
       href: "/news/tobamaru-final-24",
       image: "/news/tobamaru-final-24/image.webp"
@@ -17,12 +23,6 @@
       date: "2024-05-09",
       href: "/news/tobamaru-taiaken-24",
       image: "/news/tobamaru-taiaken-24/image.webp"
-    },
-    {
-      name: "【予告】2024鳥羽丸写真コンテストを開催します！",
-      date: "2024-04-08",
-      href: "/news/2024-photo-contest",
-      image: "/news/2024-photo-contest/image.webp"
     },
     {
       name: "学校だよりの表紙にフォトコンテスト受賞作品が掲載されました",
@@ -64,18 +64,18 @@
 
   const events = [
     {
-      name: "【応募は5月30日 17:00まで】３代目鳥羽丸記念航海乗船者募集",
+      name: "【募集中！】2024鳥羽丸写真コンテスト",
+      date: ["2024-10-08 ～ 10-31"],
+      target: ["鳥羽商船学生", "一般"],
+      comment: "",
+      href: "/news/2024-photo-contest"
+    },
+    {
+      name: "【終了】３代目鳥羽丸記念航海乗船者募集",
       date: ["2024-05-21 ～ 05-30"],
       target: ["鳥羽商船学生"],
       comment: "",
       href: "/news/tobamaru-final-24"
-    },
-    {
-      name: "【予告】2024鳥羽丸写真コンテスト",
-      date: ["2024-10-08 ～ 11-08"],
-      target: ["鳥羽商船学生", "一般"],
-      comment: "",
-      href: "/news/2024-photo-contest"
     },
     {
       name: "第58回海学祭　模擬店",
