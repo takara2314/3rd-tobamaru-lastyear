@@ -51,7 +51,7 @@
       <br>
       
       <PrimaryBtn
-        href="https://forms.office.com/Pages/ResponsePage.aspx?id=XYP-cpVeEkWK4KezivJfyOugOHipjf5DvoIwz5tUPaZURFQySDlPVzNSMFNLUFM5VzNRNEtGOTNKWSQlQCN0PWcu"
+        href="https://forms.office.com/r/67qq9c6cEy"
         label="応募フォーム"
       />
 
