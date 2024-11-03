@@ -5,7 +5,7 @@
 </script>
 
 <MetaTags
-  title="【募集中！】2024鳥羽丸写真コンテストを開催します！"
+  title="【応募終了】2024鳥羽丸写真コンテストを開催します！"
   description="今年も開催！応募期間は10月8日～10月31日！"
   href="/news/2024-photo-contest"
 />
@@ -13,7 +13,7 @@
 <main>
   <article>
     <H2 newsDatetime="2024-10-08 00:00">
-      【募集中！】2024鳥羽丸写真コンテストを開催します！
+      【応募終了】2024鳥羽丸写真コンテストを開催します！
     </H2>
   </article>
 
@@ -60,9 +60,9 @@
 
       <div class="duration">
         応募期間:　10月8日（火） ～ 10月31日（金）
-        <!-- <span class="notice">
+        <span class="notice">
           ※応募終了しました。沢山のご応募ありがとうございました。
-        </span> -->
+        </span>
       </div>
 
       <!-- <PrimaryBtn
@@ -80,5 +80,9 @@
 
   #poster > div {
     margin-bottom: 3rem;
+  }
+
+  .notice {
+    color: red;
   }
 </style>

@@ -7,7 +7,7 @@
 
   const news = [
     {
-      name: "【募集中！】2024鳥羽丸写真コンテストを開催します！",
+      name: "【応募終了】2024鳥羽丸写真コンテストを開催します！",
       date: "2024-10-08",
       href: "/news/2024-photo-contest",
       image: "/news/2024-photo-contest/image.webp"
@@ -64,7 +64,7 @@
 
   const events = [
     {
-      name: "【募集中！】2024鳥羽丸写真コンテスト",
+      name: "【応募終了】2024鳥羽丸写真コンテスト",
       date: ["2024-10-08 ～ 10-31"],
       target: ["鳥羽商船学生", "一般"],
       comment: "",
