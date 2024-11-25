@@ -7,6 +7,12 @@
 
   const news = [
     {
+      name: "第59回鳥羽商船海学祭",
+      date: "2024-11-30",
+      href: "/news/2024-kaigakusai",
+      image: "/news/2024-kaigakusai/image.webp"
+    },
+    {
       name: "【応募終了】2024鳥羽丸写真コンテストを開催します！",
       date: "2024-10-08",
       href: "/news/2024-photo-contest",
@@ -63,6 +69,13 @@
   ];
 
   const events = [
+    {
+      name: "第59回鳥羽商船海学祭",
+      date: ["2024-11-30 ～ 12-01"],
+      target: ["鳥羽商船学生", "一般"],
+      comment: "",
+      href: "/news/2024-kaigakusai"
+    },
     {
       name: "【応募終了】2024鳥羽丸写真コンテスト",
       date: ["2024-10-08 ～ 10-31"],
