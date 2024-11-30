@@ -64,18 +64,22 @@
     <br>
 
     <article>
-      <H2>操船体験会の予約</H2>
-      実践的な操船体験を行うには予約が必要です。以下から予約できます。パスワードは"<strong>1080</strong>"(とばまる)です。
-      <br>
-      人数制限がある為、ご希望に添えない場合がございます。
-      <br>
-      <span class="notice">予約にはYahooIDが必要です。</span>
-      <br>
-      <br>
-      <PrimaryBtn
-        href="https://passmarket.yahoo.co.jp/event/show/detail/02eh3jcc5c441.html"
-        label="予約ページ"
-      />
+      <H2>操船体験会の予約<br><span class="notice">予約は終了しました。</span></H2>
+      <div class="regist">
+        実践的な操船体験を行うには予約が必要です。以下から予約できます。パスワードは"<strong>1080</strong>"(とばまる)です。
+        <br>
+        人数制限がある為、ご希望に添えない場合がございます。
+        <br>
+        <span class="notice">予約にはYahooIDが必要です。</span>
+        <br>
+        <br>
+        <div class="disable">
+          <PrimaryBtn
+            href=""
+            label="予約ページ"
+          />
+        </div>
+      </div>
     </article>
 
 
@@ -101,6 +105,19 @@
 
     strong {
       color: rgb(145, 90, 90);
+    }
+
+    .regist {
+      opacity: 50%;
+      margin-left: calc(50vw - 500px);
+      margin-right: calc(50vw - 500px);
+      background: repeating-linear-gradient(45deg, #ccc, #ccc 20px, #fff 0, #fff 40px);
+      border-radius: 1rem;
+      padding-bottom: 1em;
+    }
+
+    .disable {
+      filter: grayscale(1);
     }
   </style>
   
