@@ -90,8 +90,8 @@
     .list {
       list-style-type: circle;
       text-align: left;
-      margin-left: calc(50vw - 200px);
-      margin-right: calc(50vw - 200px);
+      margin-left: calc(5vw);
+      margin-right: calc(5vw);
       color: var(--text-color);
       padding: 0.5rem 2.5rem;
       border-radius: 1rem;
@@ -109,8 +109,8 @@
 
     .regist {
       opacity: 50%;
-      margin-left: calc(50vw - 500px);
-      margin-right: calc(50vw - 500px);
+      margin-left: calc(5vw);
+      margin-right: calc(5vw);
       background: repeating-linear-gradient(45deg, #ccc, #ccc 20px, #fff 0, #fff 40px);
       border-radius: 1rem;
       padding-bottom: 1em;
@@ -118,6 +118,20 @@
 
     .disable {
       filter: grayscale(1);
+    }
+
+    @media (min-width: 600px) {
+      .list {
+        margin-left: calc(50vw - 250px);
+        margin-right: calc(50vw - 250px);
+      }
+    }
+
+    @media (min-width: 1100px) {
+      .regist {
+        margin-left: calc(50vw - 500px);
+        margin-right: calc(50vw - 500px);      
+      }
     }
   </style>
   
