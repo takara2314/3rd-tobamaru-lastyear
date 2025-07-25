@@ -7,6 +7,12 @@
 
   const news = [
     {
+      name: "2025鳥羽丸写真コンテストを開催します！",
+      date: "2025-07-26",
+      href: "/news/2025-photo-contest",
+      image: "/news/2025-photo-contest/image.webp"
+    },
+    {
       name: "第59回鳥羽商船海学祭",
       date: "2024-11-30",
       href: "/news/2024-kaigakusai",
