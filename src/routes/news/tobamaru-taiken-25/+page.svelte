@@ -1,6 +1,6 @@
 <script>
   import MetaTags from "../../../components/MetaTags.svelte";
-    import PrimaryBtn from "../../../components/buttons/PrimaryBtn.svelte";
+  import PrimaryBtn from "../../../components/buttons/PrimaryBtn.svelte";
   import H2 from "../../../components/headers/H2.svelte";
 </script>
 

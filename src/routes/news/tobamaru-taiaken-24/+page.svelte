@@ -55,10 +55,6 @@
     color: var(--primary-color);
   }
 
-  .others {
-    margin-top: 5rem;
-  }
-
   .cover-area {
     margin-top: 5rem;
   }
