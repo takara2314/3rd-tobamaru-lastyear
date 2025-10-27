@@ -94,7 +94,7 @@
       target: ["鳥羽商船学生", "一般"],
       comment: "",
       href: "/news/2025-photo-contest",
-    }
+    },
   ];
 </script>
 
@@ -109,7 +109,7 @@
 />
 
 <header>
-  <!-- svelte-ignore a11y-media-has-caption -->
+  <!-- svelte-ignore a11y_media_has_caption -->
   <video autoplay muted loop preload="none">
     <source src="/web-promotion.webm" type="video/webm" />
     <source src="/web-promotion.mp4" type="video/mp4" />
@@ -121,7 +121,7 @@
 
   <section class="scroll-down-area">
     <div class="scroll-down">
-      <span class="arrow-down" />
+      <span class="arrow-down"></span>
       <span class="scroll-title"> Scroll down </span>
     </div>
   </section>
@@ -237,7 +237,7 @@
         title="Instagramの投稿"
         src="https://snapwidget.com/embed/1017460"
         class="snapwidget-widget instagram-feed"
-      />
+      ></iframe>
     </section>
   </div>
 

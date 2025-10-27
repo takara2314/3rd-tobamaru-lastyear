@@ -1,9 +1,15 @@
 <script>
-  export let href = "/#";
-  export let label;
+  /**
+   * @typedef {Object} Props
+   * @property {string} [href]
+   * @property {any} label
+   */
+
+  /** @type {Props} */
+  let { href = "/#", label } = $props();
 </script>
 
-<a href={href}>
+<a {href}>
   {label}
 </a>
 

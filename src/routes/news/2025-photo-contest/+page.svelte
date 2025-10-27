@@ -28,7 +28,7 @@
 
     <div>
       2025も鳥羽丸写真コンテストを開催します！応募期間は7月21日～10月31日です。
-      <br>
+      <br />
       結果発表は12月6日、7日に鳥羽商船高等専門学校海学祭Tobamaru Project Team展示会場にて行います。
       <!-- <br>
       応募方法などは詳細が決まり次第追記します。 -->
@@ -41,15 +41,13 @@
   </div>
 
   <article id="how-to-apply">
-    <br>
-    <H2>
-      応募方法
-    </H2>
+    <br />
+    <H2>応募方法</H2>
     <div>
       以下のformsに必要情報を入力してください。
-      <br>
-      <br>
-      
+      <br />
+      <br />
+
       <PrimaryBtn
         href="https://forms.gle/WxKHsN85864UvUGG8"
         label="応募フォーム"
@@ -80,9 +78,5 @@
 
   #poster > div {
     margin-bottom: 3rem;
-  }
-
-  .notice {
-    color: red;
   }
 </style>

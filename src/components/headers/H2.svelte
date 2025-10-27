@@ -1,14 +1,21 @@
 <script>
   import HeaderWave from "../waves/HeaderWave.svelte";
-  export let newsDatetime = null;
-  export let whiteWave = false;
+  /**
+   * @typedef {Object} Props
+   * @property {any} [newsDatetime]
+   * @property {boolean} [whiteWave]
+   * @property {import('svelte').Snippet} [children]
+   */
+
+  /** @type {Props} */
+  let { newsDatetime = null, whiteWave = false, children } = $props();
 </script>
 
 <h2>
-  <slot />
+  {@render children?.()}
 
   {#if newsDatetime}
-    <time datetime="{newsDatetime}">
+    <time datetime={newsDatetime}>
       {newsDatetime.split(" ")[0]}
     </time>
   {/if}
@@ -30,7 +37,7 @@
   }
 
   h2 > div {
-    content: '';
+    content: "";
     width: 20rem;
     height: 0.25rem;
     color: var(--gray-wave-color);
@@ -39,7 +46,7 @@
   }
 
   h2 > div[whiteWave] {
-    content: '';
+    content: "";
     width: 20rem;
     height: 0.25rem;
     color: var(--white-wave-color);

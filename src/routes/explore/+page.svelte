@@ -12,40 +12,29 @@
 
 <main>
   <article>
-    <H2>
-      鳥羽丸を探検してみよう
-    </H2>
-    <div>
-      Google Mapsのストリートビューで鳥羽丸を探検しましょう！
-    </div>
+    <H2>鳥羽丸を探検してみよう</H2>
+    <div>Google Mapsのストリートビューで鳥羽丸を探検しましょう！</div>
   </article>
 
   <div id="street-view">
     <iframe
       title="鳥羽丸ストリートビュー"
-      src="https://www.google.com/maps/embed?pb=!4v1697532010919!6m8!1m7!1sCAoSLEFGMVFpcE04VEQzSWRoOHUzaDFSMl9sUXM3OHdaWVBkcU9VeUJkQXZlQkF0!2m2!1d34.482331214363!2d136.82449751617!3f338.1413199854713!4f-7.983307532190992!5f0.7820865974627469" 
+      src="https://www.google.com/maps/embed?pb=!4v1697532010919!6m8!1m7!1sCAoSLEFGMVFpcE04VEQzSWRoOHUzaDFSMl9sUXM3OHdaWVBkcU9VeUJkQXZlQkF0!2m2!1d34.482331214363!2d136.82449751617!3f338.1413199854713!4f-7.983307532190992!5f0.7820865974627469"
       width="600"
       height="450"
       loading="lazy"
       referrerpolicy="no-referrer-when-downgrade"
-    />
+    ></iframe>
 
-    <menu>
-      Coming soon...
-    </menu>
+    <menu> Coming soon... </menu>
   </div>
 
   <article id="real-experience">
-    <H2>
-      現地で体験してみたいキミへ
-    </H2>
+    <H2>現地で体験してみたいキミへ</H2>
     <div>
       実際に現地で体験してみたいキミは、鳥羽丸見学イベントに参加することをオススメします！
     </div>
-    <PrimaryBtn
-      href="/#events"
-      label="イベント情報を見る"
-    />
+    <PrimaryBtn href="/#events" label="イベント情報を見る" />
   </article>
 </main>
 

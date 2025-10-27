@@ -2,12 +2,16 @@
   import "./reset.css";
   import "./global.css";
   import CommonWave from "../components/waves/CommonWave.svelte";
-  import {
-    PUBLIC_INSTAGRAM_NAME,
-    PUBLIC_X_NAME
-  } from "$env/static/public";
+  import { PUBLIC_INSTAGRAM_NAME, PUBLIC_X_NAME } from "$env/static/public";
+  /**
+   * @typedef {Object} Props
+   * @property {import('svelte').Snippet} [children]
+   */
 
-  let isShowMenu = false;
+  /** @type {Props} */
+  let { children } = $props();
+
+  let isShowMenu = $state(false);
 
   function handleClickHamburger() {
     isShowMenu = !isShowMenu;
@@ -26,19 +30,15 @@
       aria-expanded={isShowMenu}
       aria-controls="menu-container"
       aria-haspopup="menu"
-      on:click={handleClickHamburger}
+      onclick={handleClickHamburger}
     >
-      <div />
-      <div />
-      <div />
+      <div></div>
+      <div></div>
+      <div></div>
     </button>
     <h1 class="title">
       <a href="/">
-        <img
-          src="/logo.svg"
-          alt="ロゴ"
-          class="logo"
-        />
+        <img src="/logo.svg" alt="ロゴ" class="logo" />
       </a>
     </h1>
   </div>
@@ -46,10 +46,7 @@
     <li>
       <a href="/history">
         <div>
-          <img
-            src="/icons/ship.svg"
-            alt="鳥羽丸の歴史"
-          />
+          <img src="/icons/ship.svg" alt="鳥羽丸の歴史" />
         </div>
         鳥羽丸の歴史
       </a>
@@ -57,10 +54,7 @@
     <li>
       <a href="/explore">
         <div>
-          <img
-            src="/icons/compass.svg"
-            alt="鳥羽丸の歴史"
-          />
+          <img src="/icons/compass.svg" alt="鳥羽丸の歴史" />
         </div>
         鳥羽丸探検
       </a>
@@ -68,10 +62,7 @@
     <li>
       <a href="/point">
         <div>
-          <img
-            src="/icons/ribbon.svg"
-            alt="鳥羽丸の歴史"
-          />
+          <img src="/icons/ribbon.svg" alt="鳥羽丸の歴史" />
         </div>
         ここがスゴイ！
       </a>
@@ -79,10 +70,7 @@
     <li>
       <a href="/contact">
         <div>
-          <img
-            src="/icons/letter.svg"
-            alt="お問い合わせ"
-          />
+          <img src="/icons/letter.svg" alt="お問い合わせ" />
         </div>
         お問い合わせ
       </a>
@@ -90,37 +78,27 @@
   </ul>
 </menu>
 
-<slot />
+{@render children?.()}
 
-<!-- svelte-ignore a11y-click-events-have-key-events -->
-<!-- svelte-ignore a11y-no-static-element-interactions -->
+<!-- svelte-ignore a11y_click_events_have_key_events -->
+<!-- svelte-ignore a11y_no_static_element_interactions -->
 <div
   class="modal-background"
   style={isShowMenu ? "display:block" : "display:none"}
-  on:click={handleModalClickBackground}
-/>
-<ul
-  class="sp"
-  style={isShowMenu ? "display:block" : "display:none"}
->
+  onclick={handleModalClickBackground}
+></div>
+<ul class="sp" style={isShowMenu ? "display:block" : "display:none"}>
   <li class="title-area">
     <h1 class="title">
       <a href="/">
-        <img
-          src="/logo.svg"
-          alt="ロゴ"
-          class="logo"
-        />
+        <img src="/logo.svg" alt="ロゴ" class="logo" />
       </a>
     </h1>
   </li>
   <li>
     <a href="/history">
       <div>
-        <img
-          src="/icons/ship.svg"
-          alt="鳥羽丸の歴史"
-        />
+        <img src="/icons/ship.svg" alt="鳥羽丸の歴史" />
       </div>
       鳥羽丸の歴史
     </a>
@@ -128,10 +106,7 @@
   <li>
     <a href="/explore">
       <div>
-        <img
-          src="/icons/compass.svg"
-          alt="鳥羽丸の歴史"
-        />
+        <img src="/icons/compass.svg" alt="鳥羽丸の歴史" />
       </div>
       鳥羽丸探検
     </a>
@@ -139,10 +114,7 @@
   <li>
     <a href="/point">
       <div>
-        <img
-          src="/icons/ribbon.svg"
-          alt="鳥羽丸の歴史"
-        />
+        <img src="/icons/ribbon.svg" alt="鳥羽丸の歴史" />
       </div>
       ここがスゴイ！
     </a>
@@ -150,10 +122,7 @@
   <li>
     <a href="/contact">
       <div>
-        <img
-          src="/icons/letter.svg"
-          alt="お問い合わせ"
-        />
+        <img src="/icons/letter.svg" alt="お問い合わせ" />
       </div>
       お問い合わせ
     </a>
@@ -183,19 +152,14 @@
         </a>
       </li>
       <li class="copyright">
-        <small>
-          © 2023 Tobamaru Project Team
-        </small>
+        <small> © 2023 Tobamaru Project Team </small>
       </li>
     </ul>
 
     <ul class="sns-area">
       <li>
         <a href={`https://instagram.com/${PUBLIC_INSTAGRAM_NAME}/`}>
-          <button
-            aria-label="インスタグラムのリンク"
-            class="mail"
-          >
+          <button aria-label="インスタグラムのリンク" class="mail">
             <img
               src="/logos/instagram.svg"
               alt="Instagram"
@@ -207,14 +171,8 @@
       </li>
       <li>
         <a href={`https://x.com/${PUBLIC_X_NAME}`}>
-          <button
-            aria-label="X（旧Twitter）のリンク"
-            class="x"
-          >
-            <img
-              src="/logos/x.svg"
-              alt="X"
-            />
+          <button aria-label="X（旧Twitter）のリンク" class="x">
+            <img src="/logos/x.svg" alt="X" />
           </button>
         </a>
       </li>
