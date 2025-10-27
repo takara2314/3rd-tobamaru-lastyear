@@ -7,114 +7,99 @@
 
   const news = [
     {
+      name: "第60回海学祭鳥羽丸体験乗船者募集！",
+      date: "2025-10-27",
+      href: "/news/tobamaru-taiken-25",
+      image: "/news/tobamaru-taiken-25/image.webp",
+    },
+    {
       name: "2025鳥羽丸写真コンテストを開催します！",
       date: "2025-07-26",
       href: "/news/2025-photo-contest",
-      image: "/news/2025-photo-contest/image.webp"
+      image: "/news/2025-photo-contest/image.webp",
     },
     {
-      name: "第59回鳥羽商船海学祭",
+      name: "【終了】第59回鳥羽商船海学祭",
       date: "2024-11-30",
       href: "/news/2024-kaigakusai",
-      image: "/news/2024-kaigakusai/image.webp"
+      image: "/news/2024-kaigakusai/image.webp",
     },
     {
       name: "【応募終了】2024鳥羽丸写真コンテストを開催します！",
       date: "2024-10-08",
       href: "/news/2024-photo-contest",
-      image: "/news/2024-photo-contest/image.webp"
+      image: "/news/2024-photo-contest/image.webp",
     },
     {
       name: "【終了】３代目鳥羽丸記念航海乗船者募集",
       date: "2024-05-22",
       href: "/news/tobamaru-final-24",
-      image: "/news/tobamaru-final-24/image.webp"
+      image: "/news/tobamaru-final-24/image.webp",
     },
     {
-      name: "練習船「鳥羽丸」体験航海参加者募集",
+      name: "【終了】練習船「鳥羽丸」体験航海参加者募集",
       date: "2024-05-09",
       href: "/news/tobamaru-taiaken-24",
-      image: "/news/tobamaru-taiaken-24/image.webp"
+      image: "/news/tobamaru-taiaken-24/image.webp",
     },
     {
       name: "学校だよりの表紙にフォトコンテスト受賞作品が掲載されました",
       date: "2023-12-30",
       href: "/news/school-newsletter-95",
-      image: "/news/school-newsletter-95/newsletter-cover.webp"
+      image: "/news/school-newsletter-95/newsletter-cover.webp",
     },
     {
       name: "【結果発表】2023鳥羽丸写真コンテストの結果発表",
       date: "2023-12-30",
       href: "/news/2023-photo-contest-results",
-      image: "/news/2023-photo-contest-results/1st-award.webp"
+      image: "/news/2023-photo-contest-results/1st-award.webp",
     },
     {
       name: "新しい鳥羽丸の情報が日経新聞で紹介されました",
       date: "2023-11-10",
       href: "/news/new-tobamaru-nikkei",
-      image: "/news/new-tobamaru-nikkei/image.webp"
+      image: "/news/new-tobamaru-nikkei/image.webp",
     },
     {
       name: "ホームページをリニューアルしました",
       date: "2023-10-20",
       href: "/news/hp-renewal",
-      image: "/photos/tobamaru.webp"
+      image: "/photos/tobamaru.webp",
     },
     {
       name: "【応募終了】2023鳥羽丸写真コンテストを開催します！",
       date: "2023-10-08",
       href: "/news/2023-photo-contest",
-      image: "/photos/commemorative-photo.webp"
+      image: "/photos/commemorative-photo.webp",
     },
     {
       name: "第一回 鳥羽丸見学を実施しました",
       date: "2023-04-21",
       href: "/news/1st-tobamaru-visit",
-      image: "/photos/looking.webp"
-    }
+      image: "/photos/looking.webp",
+    },
   ];
 
   const events = [
     {
-      name: "第59回鳥羽商船海学祭",
-      date: ["2024-11-30 ～ 12-01"],
+      name: "第60回海学祭鳥羽丸体験乗船",
+      date: ["2025-12-6 ～ 12-7"],
       target: ["鳥羽商船学生", "一般"],
       comment: "",
-      href: "/news/2024-kaigakusai"
+      href: "/news/tobamaru-taiken-25",
     },
     {
-      name: "【応募終了】2024鳥羽丸写真コンテスト",
-      date: ["2024-10-08 ～ 10-31"],
+      name: "2025鳥羽丸写真コンテスト",
+      date: ["2025-07-21 ～ 10-31"],
       target: ["鳥羽商船学生", "一般"],
       comment: "",
-      href: "/news/2024-photo-contest"
-    },
-    {
-      name: "【終了】３代目鳥羽丸記念航海乗船者募集",
-      date: ["2024-05-21 ～ 05-30"],
-      target: ["鳥羽商船学生"],
-      comment: "",
-      href: "/news/tobamaru-final-24"
-    },
-    {
-      name: "第58回海学祭　模擬店",
-      date: ["2023-12-02 ～ 12-03"],
-      target: ["鳥羽商船学生", "一般"],
-      comment: "写真コンテストの表彰も実施",
-      href: "https://gakuseikai.toba-cmt.ac.jp/kaigakusai/"
-    },
-    {
-      name: "【応募終了】2023鳥羽丸写真コンテスト",
-      date: ["2023-10-08 ～ 11-08"],
-      target: ["鳥羽商船学生"],
-      comment: "",
-      href: "/news/2023-photo-contest"
+      href: "/news/2025-photo-contest",
     }
   ];
 </script>
 
 <svelte:head>
-  <script src="https://snapwidget.com/js/snapwidget.js" />
+  <script src="https://snapwidget.com/js/snapwidget.js"></script>
 </svelte:head>
 
 <MetaTags
@@ -137,9 +122,7 @@
   <section class="scroll-down-area">
     <div class="scroll-down">
       <span class="arrow-down" />
-      <span class="scroll-title">
-        Scroll down
-      </span>
+      <span class="scroll-title"> Scroll down </span>
     </div>
   </section>
 </header>
@@ -147,23 +130,15 @@
 <main>
   <section id="whats-tobamaru" class="column-2">
     <figure class="left-image">
-      <img
-        src="/photos/tobamaru.webp"
-        alt="鳥羽丸"
-      />
-      <figcaption>
-        撮影者:　福野 泰介様
-      </figcaption>
+      <img src="/photos/tobamaru.webp" alt="鳥羽丸" />
+      <figcaption>撮影者:　福野 泰介様</figcaption>
     </figure>
 
     <article>
-      <H2>
-        鳥羽丸とは？
-      </H2>
+      <H2>鳥羽丸とは？</H2>
       <div>
         <p>
-          鳥羽丸（とばまる）とは、
-          鳥羽商船高等専門学校が保有する練習船です。
+          鳥羽丸（とばまる）とは、 鳥羽商船高等専門学校が保有する練習船です。
         </p>
         <p>
           現在は1994年に建造された3代目が運用されており、
@@ -185,19 +160,14 @@
   <section id="news">
     <article>
       <H2>ニュース</H2>
-      <div>
-        鳥羽丸とTobamaru Project Teamについての最新情報を掲載します
-      </div>
+      <div>鳥羽丸とTobamaru Project Teamについての最新情報を掲載します</div>
     </article>
     <div class="news">
       <ul>
         {#each news as article}
           <li>
             <a href={article.href}>
-              <img
-                src={article.image}
-                alt={article.name}
-              />
+              <img src={article.image} alt={article.name} />
               <div>
                 <div>
                   <span class="published-at">
@@ -218,12 +188,8 @@
   <div class="blue-bg-area">
     <section id="events" class="column-2">
       <article>
-        <H2 whiteWave>
-          イベント
-        </H2>
-        <div>
-          不定期に鳥羽丸に関するイベントを開催しています
-        </div>
+        <H2 whiteWave>イベント</H2>
+        <div>不定期に鳥羽丸に関するイベントを開催しています</div>
 
         <ul class="events">
           {#each events as event}
@@ -258,21 +224,14 @@
       </article>
 
       <figure class="right-image">
-        <img
-          src="/photos/looking.webp"
-          alt="望遠鏡を見る女の子"
-        />
+        <img src="/photos/looking.webp" alt="望遠鏡を見る女の子" />
       </figure>
     </section>
 
     <section id="instagram">
       <article>
-        <H2 whiteWave>
-          Instagram
-        </H2>
-        <div>
-          定期的に鳥羽丸や鳥羽商船にまつわる情報を投稿します
-        </div>
+        <H2 whiteWave>Instagram</H2>
+        <div>定期的に鳥羽丸や鳥羽商船にまつわる情報を投稿します</div>
       </article>
       <iframe
         title="Instagramの投稿"
@@ -284,50 +243,27 @@
 
   <section id="whats-tobamaru-project-team" class="column-2">
     <figure class="left-image">
-      <img
-        src="/photos/commemorative-photo.webp"
-        alt="集合写真"
-      />
+      <img src="/photos/commemorative-photo.webp" alt="集合写真" />
     </figure>
 
     <article>
-      <H2>
-        Tobamaru Project Teamとは？
-      </H2>
+      <H2>Tobamaru Project Teamとは？</H2>
 
       <div>
-        <p>
-          Tobamaru Project Teamは、
-        </p>
-        <p>
-          代船入替えに向けて記念行事、
-        </p>
-        <p>
-          在校生や卒業生の鳥羽商船に対する愛着や
-        </p>
-        <p>
-          地域の人々の親しみをより深めるための
-        </p>
-        <p>
-          企画を検討する学生団体です。
-        </p>
-        <p>
-          （学校から結成承認済み）
-        </p>
+        <p>Tobamaru Project Teamは、</p>
+        <p>代船入替えに向けて記念行事、</p>
+        <p>在校生や卒業生の鳥羽商船に対する愛着や</p>
+        <p>地域の人々の親しみをより深めるための</p>
+        <p>企画を検討する学生団体です。</p>
+        <p>（学校から結成承認済み）</p>
       </div>
 
       <div class="button-column">
         <p>
-          <SecondaryBtn
-            label="活動規約"
-            href="/terms.pdf"
-          />
+          <SecondaryBtn label="活動規約" href="/terms.pdf" />
         </p>
         <p>
-          <PrimaryBtn
-            label="詳しく!(入会はこちらから)"
-            href="/joinus"
-          />
+          <PrimaryBtn label="詳しく!(入会はこちらから)" href="/joinus" />
         </p>
       </div>
     </article>
@@ -392,7 +328,7 @@
   }
 
   .arrow-down:after {
-    content: '';
+    content: "";
     display: block;
     margin: 0;
     padding: 0;
@@ -423,7 +359,7 @@
     width: 0.15rem;
     height: 5.5rem;
     background: var(--bg-color);
-    content: ' ';
+    content: " ";
   }
 
   @keyframes elasticus {
