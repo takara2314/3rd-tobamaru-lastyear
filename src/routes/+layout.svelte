@@ -152,7 +152,7 @@
         </a>
       </li>
       <li class="copyright">
-        <small> © 2023 Tobamaru Project Team </small>
+        <small> © 2023-2025 Tobamaru Project Team </small>
       </li>
     </ul>
 

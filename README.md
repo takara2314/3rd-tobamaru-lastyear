@@ -32,10 +32,10 @@ staticフォルダーを除き [CC BY 4.0](./LICENSE)
 
 ## 前提環境
 
-- Node.js v18+
+- Node.js v22+
 
 <div align="center">
 <small>
-© 2023 Tobamaru Project Team
+© 2023-2025 Tobamaru Project Team
 </small>
 </div>
