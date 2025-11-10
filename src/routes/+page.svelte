@@ -7,13 +7,19 @@
 
   const news = [
     {
+      name: "【お詫び】2025年鳥羽丸体験乗船者募集",
+      date: "2025-11-10",
+      href: "/news/tobamaru-taiken-25-apology",
+      image: "/news/tobamaru-taiken-25-apology/image.png",
+    },
+    {
       name: "第60回海学祭鳥羽丸体験乗船者募集！",
       date: "2025-10-27",
       href: "/news/tobamaru-taiken-25",
       image: "/news/tobamaru-taiken-25/image.webp",
     },
     {
-      name: "2025鳥羽丸写真コンテストを開催します！",
+      name: "【終了】2025鳥羽丸写真コンテストを開催します！",
       date: "2025-07-26",
       href: "/news/2025-photo-contest",
       image: "/news/2025-photo-contest/image.webp",
