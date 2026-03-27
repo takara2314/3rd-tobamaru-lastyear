@@ -13,6 +13,10 @@
 
   let isShowMenu = $state(false);
 
+  const START_YEAR = 2023;
+  const currentYear = new Date().getFullYear();
+  const yearDisplay = currentYear > START_YEAR ? `${START_YEAR}-${currentYear}` : `${START_YEAR}`;
+
   function handleClickHamburger() {
     isShowMenu = !isShowMenu;
   }
@@ -152,7 +156,7 @@
         </a>
       </li>
       <li class="copyright">
-        <small> © 2023-2025 Tobamaru Project Team </small>
+        <small>&copy; {yearDisplay} Tobamaru Project Team</small>
       </li>
     </ul>
 
