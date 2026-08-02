@@ -7,13 +7,19 @@
 
   const news = [
     {
+      name: "【応募期間中】2026鳥羽丸フォトコンテストを開催します！",
+      date: "2026-08-02",
+      href: "/news/2026-photo-contest",
+      image: "/news/2026-photo-contest/image.webp",
+    },
+    {
       name: "【お詫び】2025年鳥羽丸体験乗船者募集",
       date: "2025-11-10",
       href: "/news/tobamaru-taiken-25-apology",
       image: "/news/tobamaru-taiken-25-apology/image.png",
     },
     {
-      name: "第60回海学祭鳥羽丸体験乗船者募集！",
+      name: "【終了】第60回海学祭鳥羽丸体験乗船者募集！",
       date: "2025-10-27",
       href: "/news/tobamaru-taiken-25",
       image: "/news/tobamaru-taiken-25/image.webp",
@@ -88,18 +94,11 @@
 
   const events = [
     {
-      name: "第60回海学祭鳥羽丸体験乗船",
-      date: ["2025-12-6 ～ 12-7"],
+      name: "2026鳥羽丸写真コンテスト",
+      date: ["2026年08月01 ～ 10月08日12時まで"],
       target: ["鳥羽商船学生", "一般"],
       comment: "",
-      href: "/news/tobamaru-taiken-25",
-    },
-    {
-      name: "2025鳥羽丸写真コンテスト",
-      date: ["2025-07-21 ～ 10-31"],
-      target: ["鳥羽商船学生", "一般"],
-      comment: "",
-      href: "/news/2025-photo-contest",
+      href: "/news/2026-photo-contest",
     },
   ];
 </script>
